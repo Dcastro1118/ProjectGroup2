@@ -18,7 +18,8 @@ body{
     background-color: white;
     padding: 0;
     width: 90%;
-    border: 5px solid #3a3a3a9a;
+    overflow: hidden;
+
     border-radius: 15px;
 
 }
@@ -36,16 +37,19 @@ header, main, footer{
     background-color: #3a3a3a9a;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
   /* background: linear-gradient(125deg, #8D5A4A, #EDE9DD); */
     height: 50px;
 }
+nav{
+    height: 100%;
+}
 
 .botones_menu{
-
-    height: 50%;
+    height: 100%;
     background: none;
     border: none;
-    margin-top: 3%;
+
 }
 
 .botones_menu:hover{
@@ -80,15 +84,17 @@ header, main, footer{
     }
 
     .nombre_hotel{
-
+        font-size: clamp(7px, 1vw, 13px);
         display: flex;
         flex-direction: column;
-        width: 23%;
+        width: 35%;
         height: 100%;
-        background-color: #58914e;
+        padding: 10px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.7);
+        background-color: #c0c0c084;
         margin-left: 1%;
         text-align: center;
-
     }
 
     .idx_container_video{
@@ -106,6 +112,7 @@ header, main, footer{
         object-fit: cover;
         width: auto;
         height: 100%;
+        border-radius: 10px;
 
     }
 
@@ -113,56 +120,87 @@ header, main, footer{
 
     /*Index.HTML*/
 
-    .container_footer_subcontainers{
+/* ------------- Tarjetas dinamicas --------------------- */
 
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-
-
-    }
-
-
-    .container_footer_home{
-
-        margin: 1%;
-        height: 1% auto;
-        width: 23%;
-        background-color: #3a3a3a9a;
-
-    }
-
-    .container_footer_rooms{
-
-        margin: 1%;
-        height: 1% auto;
-        width: 23%;
-        background-color: #3a3a3a5a;
-
-    }
-
-    .container_footer_experiences{
-
-        margin: 1%;
-        height: 1% auto;
-        width: 23%;
-        background-color: #3a3a3a3a;
-
-    }
-
-    .container_footer_gallery{
-
-        margin: 1%;
-        height: 1% auto;
-        width: 23%;
-        background-color: #3a3a3a1a;
-
+.diferenciales {
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     
-    }
+}
+.dif-uno, .dif-dos, .dif-tres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    text-align: center;
+ /*   box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.7); */
+    perspective: 1000px;
+}
 
-    .container_footer_general_others{
 
-        text-align: center;
 
-    }
+.cara {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+.frontal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(148, 148, 148);
+}
+.trasera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    background-color:  rgb(134, 134, 134);
+}
+
+.desayuno_logo{
+    width: 150px;
+}
+
+.rooms_logo{
+    width: 150px;
+}
+
+.experiencias_logo{
+    width: 150px;
+}
+
+
+
+.dif-uno:hover .trasera{
+    transform: rotateY(0deg);
+}
+.dif-uno:hover .frontal{
+    transform: rotateY(180deg);
+}
+.dif-dos:hover .trasera{
+    transform: rotateY(0deg);
+}
+.dif-dos:hover .frontal{
+    transform: rotateY(180deg);
+}
+.dif-tres:hover .trasera{
+    transform: rotateY(0deg);
+}
+.dif-tres:hover .frontal{
+    transform: rotateY(180deg);
+}
