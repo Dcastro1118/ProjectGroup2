@@ -23,15 +23,13 @@ body{
     border-radius: 15px;
 
 }
-
 /*Diseño general interno*/
-header, main, footer{
+body{
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
 }
-
 /*Diseños del Header*/
 .Container_header_menu{
     background-color: #3a3a3a9a;
@@ -41,26 +39,22 @@ header, main, footer{
   /* background: linear-gradient(125deg, #8D5A4A, #EDE9DD); */
     height: 50px;
 }
+/* -------------Menu------------- */
 nav{
     height: 100%;
 }
-
 .botones_menu{
     height: 100%;
     background: none;
     border: none;
-
 }
-
 .botones_menu:hover{
     background-color: #3a3a3ab6;
 }
-
 .link_botones{
     text-decoration: none;
     color: black;
 }
-
 .botones_menu.active {
     background-color: #6c757d;
     opacity: 0.7;
@@ -70,8 +64,9 @@ nav{
 
 /*Diseños del Main*/
 
-    /*Index.HTML*/
+            /* --------------------Index---------------------*/
 
+    /* --------------Seccion descripcion hotel + video------------ */
     .idx_main_container{
 
         display: flex;
@@ -116,11 +111,7 @@ nav{
 
     }
 
-/*Diseños del Footer*/
-
-    /*Index.HTML*/
-
-/* ------------- Tarjetas dinamicas --------------------- */
+/* ------------- Seccion Diferenciales --------------------- */
 
 .diferenciales {
     height: 400px;
@@ -142,9 +133,6 @@ nav{
  /*   box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.7); */
     perspective: 1000px;
 }
-
-
-
 .cara {
     position: absolute;
     backface-visibility: hidden;
@@ -171,21 +159,15 @@ nav{
     transform: rotateY(180deg);
     background-color:  rgb(134, 134, 134);
 }
-
 .desayuno_logo{
     width: 150px;
 }
-
 .rooms_logo{
     width: 150px;
 }
-
 .experiencias_logo{
     width: 150px;
 }
-
-
-
 .dif-uno:hover .trasera{
     transform: rotateY(0deg);
 }
@@ -204,3 +186,11 @@ nav{
 .dif-tres:hover .frontal{
     transform: rotateY(180deg);
 }
+
+
+/*--------------Final del index-------------------*/
+
+
+/*----------------Contact_us-------------------*/
+
+
