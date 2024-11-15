@@ -3,7 +3,7 @@
 /*Diseños del body*/
 body{
     background-color: #EDE9DD ;
-    background-image: url(/Resources/General/bg_rainforest.png);
+    background-image: url(../Resources/General/bg_rainforest.png);
     background-size: cover;
     background-attachment: fixed;
 }

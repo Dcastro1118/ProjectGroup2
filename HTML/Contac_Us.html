@@ -5,113 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="/CSS/Index.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
+
 </head>
 
-<div class="external_container">
-    
-    <header>
-    
-    
-        <!--Accesos directos-->
-    
-        <!--Contenedor de botones-->
-        <div class="Container_header_menu">
-    
-            <!--Etiqueta botones navegación-->
-            <nav>
-    
-                <!--Botones header-->
-                <button class="botones_menu" id="Button_Main"><a class="link_botones" href="index.html">Página Principal</a></button>
-                <button class="botones_menu" id="Button_Services"><a class="link_botones" href="Main_Services.html">Servicios</a></button>
-                <button class="botones_menu active" id="Button_Contact"><a class="link_botones" href="Contac_Us.html">Contactenos</a></button>
-                <button class="botones_menu" id="Button_About"><a class="link_botones" href="About_Us.html">Sobre Nosotros</a></button>
-    
-            </nav>
-    
-        </div>
-        <!--Divisor-->
-        <hr>
-    
-    </header>
-    
-    <body>
-        
-    
+
+<body>
+
+    <div class="external_container">
+
+        <header>
+
+
+            <!--Accesos directos-->
+
+            <!--Contenedor de botones-->
+            <div class="Container_header_menu">
+
+                <!--Etiqueta botones navegación-->
+                <nav>
+
+                    <!--Botones header-->
+                    <button class="botones_menu" id="Button_Main"><a class="link_botones" href="index.html">Página
+                            Principal</a></button>
+                    <button class="botones_menu" id="Button_Services"><a class="link_botones"
+                            href="Main_Services.html">Servicios</a></button>
+                    <button class="botones_menu active" id="Button_Contact"><a class="link_botones"
+                            href="Contac_Us.html">Contactenos</a></button>
+                    <button class="botones_menu" id="Button_About"><a class="link_botones" href="About_Us.html">Sobre
+                            Nosotros</a></button>
+
+                </nav>
+
+            </div>
+            <!--Divisor-->
+            <hr>
+
+        </header>
+
         <main class="d-flex justify-content-center">
-        
+
             <!--Contenedor formualrio de contacto-->
             <div class="w-50 d-flex align-content-center justify-content-around">
 
                 <!--Etiqueta formulario-->
-                <form class="d-flex flex-column justify-content-center align-content-center w-75" id="registrationForm" action="https://e-campus.uia.ac.cr/" method="post"> 
+                <form class="d-flex flex-column justify-content-center align-content-center w-75" id="contact_form" method="post">
 
                     <label for="identificacion">Identificación:</label>
-                    <input type="text" id="identificacion" name="identificacion" required> 
-                    <span class="error" id="identificacionError"></span> 
-                    
+                    <input type="text" id="identificacion" name="identificacion" required>
+                    <span class="error" id="identificacionError"></span>
+
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required> 
-                    <span class="error" id="nombreError"></span> 
-                    
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span class="error" id="nombreError"></span>
+
                     <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required> 
-                    <span class="error" id="telefonoError"></span> 
-                    
-                    <label for="correo">Correo Electrónico:</label> 
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <span class="error" id="telefonoError"></span>
+
+                    <label for="correo">Correo Electrónico:</label>
                     <input type="email" id="correo" name="correo" required>
-                    <span class="error" id="correoError"></span> 
+                    <span class="error" id="correoError"></span>
 
                     <label for="">Motivo de consulta:</label>
 
-                        <select id="tipoConsulta" name="tipoConsulta">
-                        
-                            <option value="Alojamientos">Alojamientos</option>
-                            <option value="Cotización">Cotización</option>
-                            <option value="Politicas">Politicas</option>
-                            <option value="Reservaciones">Reservaciones</option>
+                    <select id="tipoConsulta" name="tipoConsulta">
 
-                        </select>
-                    
-                    <label for="comentarios">Comentarios:</label> <textarea name="Comentarios" type="text" id="comentarios" name="comentarios" required></textarea>
+                        <option value="Alojamientos">Alojamientos</option>
+                        <option value="Cotización">Cotización</option>
+                        <option value="Politicas">Politicas</option>
+                        <option value="Reservaciones">Reservaciones</option>
+
+                    </select>
+
+                    <label for="comentarios">Comentarios:</label> <textarea name="comentarios" type="text"
+                        id="comentarios" name="comentarios" required></textarea>
                     <span class="error" id="comentariosError"></span>
-                    
+
                     <br> <br>
 
-                    <button type="submit" onClick="return validateForm()">Enviar</button> <button type="reset">Limpiar</button>
-                
+                    <button type="submit">Enviar</button> 
+                    <button type="reset">Limpiar</button>
+
                 </form>
 
             </div>
-    
+
         </main>
-    
-    </body>
-    
-    <footer>
-    
-        <!--Divisor-->
-        <hr>
-    
-        <!--Contenedor del footer-->
-        <div class="container_footer_subcontainers">
-        
-        </div>
-        
-        <div class="container_footer_general_others">
-    
-            <p>Bla, bla, bla... todos los derechos reservados</p>
-    
-        </div>
-    
-    </footer>
+        <footer>
+
+            <!--Divisor-->
+            <hr>
+
+            <!--Contenedor del footer-->
+            <div class="container_footer_subcontainers">
+
+            </div>
+
+            <div class="container_footer_general_others">
+
+                <p>Bla, bla, bla... todos los derechos reservados</p>
+
+            </div>
+
+        </footer>
+
     </div>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/contact-form.js"></script>
+
+</body>
+
+
 
 </html>
