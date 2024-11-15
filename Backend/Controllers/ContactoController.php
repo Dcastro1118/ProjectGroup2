@@ -17,7 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    var_dump($data);
     // Procesar los datos recibidos (por ejemplo, enviarlos por correo)
     procesarFormulario($data);
 } else {
@@ -55,7 +54,7 @@ function procesarFormulario($data) {
     \n
     \nMensaje:\n$message";
     
-    $headers = "From: no-reply@tudominio.com";
+    $headers = "From: hotelbatsu@gmail.com";
 
     // Intentar enviar el correo y devolver una respuesta en JSON
     if (mail($to, $subject, $body, $headers)) {

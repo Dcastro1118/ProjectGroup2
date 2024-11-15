@@ -12,7 +12,7 @@ document.getElementById("contact_form").addEventListener("submit", function (eve
 
     console.log(formObject);
 
-    fetch("http://localhost/ProjectGroup2/Backend/ContactoController.php", { // Cambia el URL por el de tu servidor
+    fetch("http://localhost/ProjectGroup2/Backend/Controllers/ContactoController.php", { // Cambia el URL por el de tu servidor
         method: "POST",
         headers: {
             "Content-Type": "application/json"
