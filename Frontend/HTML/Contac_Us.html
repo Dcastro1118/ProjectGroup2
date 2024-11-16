@@ -30,13 +30,16 @@
                 <nav>
 
                     <!--Botones header-->
-                    <button class="botones_menu" id="Button_Main"><a class="link_botones" href="index.html">Principal</a></button>
+                    <button class="botones_menu" id="Button_Main"><a class="link_botones"
+                            href="index.html">Principal</a></button>
                     <button class="botones_menu" id="Button_Services"><a class="link_botones"
                             href="Main_Services.html">Servicios</a></button>
                     <button class="botones_menu active" id="Button_Contact"><a class="link_botones"
                             href="Contac_Us.html">Contacto</a></button>
-                    <button class="botones_menu" id="Button_About"><a class="link_botones" href="About_Us.html">Nosotros</a></button>
-                    <button class="botones_menu" id="Button_About"><a class="link_botones" href="Login.html">Ingresar</a></button>
+                    <button class="botones_menu" id="Button_About"><a class="link_botones"
+                            href="About_Us.html">Nosotros</a></button>
+                    <button class="botones_menu" id="Button_About"><a class="link_botones"
+                            href="Login.html">Ingresar</a></button>
 
                 </nav>
 
@@ -45,7 +48,33 @@
 
         </header>
         <main>
-            <div class="m-3 d-flex justify-content-center">
+            <div class="m-3 d-flex justify-content-evenly">
+
+
+                <div class="contenedorInfo d-flex flex-column align-items-center ">
+                    <h2 class="text-center">Contactenos</h2>
+                    <h3 class="m-1">
+                        ¡Estamos para ayudarte!
+                    </h3>
+                    <p class="m-lg-3 text-center">
+                        Nos encantaría saber de ti. Si tienes alguna pregunta, comentario o necesitas asistencia, no
+                        dudes en ponerte en contacto con nosotros.
+
+                    </p>
+
+                    <ul>
+                        <li>Telefono: 8657-6745</li>
+                        <li>Correo electronico: hotelbatsu@gmail.com</li>
+                        <li>Ubicacion: Monteverde, Puntarenas, Costa Rica</li>
+                        <li>Horario de atencion: 8:00 am - 8:00 pm</li>
+                    </ul>
+                    <div class="d-flex justify-content-evenly w-75">
+
+                        <img class="logos_redes" src="../Resources/facebookicono.png" alt="">
+                        <img class="logos_redes" src="../Resources/instagramicono.png" alt="">
+
+                    </div>
+                </div>
 
                 <!--Contenedor formualrio de contacto-->
                 <div class="w-50 d-flex align-content-center justify-content-around">
@@ -81,8 +110,9 @@
 
                         </select>
 
-                        <label for="comentarios">Comentarios:</label> 
-                        <textarea class="form-control" name="comentarios" type="text" id="comentarios" name="comentarios" required></textarea>
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea class="form-control" name="comentarios" type="text" id="comentarios"
+                            name="comentarios" required></textarea>
                         <span class="error" id="comentariosError"></span>
 
                         <br> <br>

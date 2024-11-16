@@ -1,4 +1,5 @@
-document.getElementById("contact_form").addEventListener("submit", function (event) {
+document.getElementById("contact_form").addEventListener("submit", sendJson) 
+    function sendJson (event){
     event.preventDefault(); 
     // Capturar los datos del formulario
     const form = event.target;
@@ -34,4 +35,4 @@ document.getElementById("contact_form").addEventListener("submit", function (eve
             console.error("Hubo un problema con el envío:", error);
             alert("Tu soliditud ha fracasado, hubo un problema.");
         });
-});
+};

@@ -221,3 +221,27 @@ nav{
     font-weight: bold;
 }
 
+/*-------------------------Contact---------------------*/
+
+
+.contenedorInfo {
+
+    background-color: rgba(185, 185, 185, 0.801);
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+  
+
+}
+
+.logos_redes {
+
+height: 60px;
+
+
+}
+
+.logos_redes:first-child{
+
+    height: 54px;
+}
