@@ -15,7 +15,7 @@ function loginRequest(event) {
 
     console.log(formObject);
 
-    fetch("http://localhost/ProjectGroup2/Backend/Controllers/AutController.php", { // Cambia el URL por el de tu servidor
+    fetch("http://localhost/ProjectGroup2/Backend/Controllers/AutController.php", { // URL del controlador
         method: "POST",
         headers: {
             "Content-Type": "application/json"

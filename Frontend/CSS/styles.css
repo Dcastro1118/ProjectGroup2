@@ -81,9 +81,10 @@ nav{
     }
 
     .nombre_hotel{
-        font-size: clamp(7px, 1vw, 13px);
+        font-size: clamp(7px, 1vw, 14px);
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 35%;
         height: 100%;
         padding: 10px;
@@ -248,7 +249,7 @@ nav{
 }
 
 .logos_redes {
-height: 60px;
+    height: 60px;
 }
 
 .logos_redes:first-child{
