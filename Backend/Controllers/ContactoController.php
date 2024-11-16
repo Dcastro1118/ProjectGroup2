@@ -43,7 +43,7 @@ function procesarFormulario($data) {
     }
 
     // Enviar un correo (ejemplo básico):
-    $to = "darap18@hotmail.com"; // Cambia a tu dirección de correo
+    $to = "hotelbatsu@gmail.com"; // Cambia a tu dirección de correo
     $subject = "Contactar a $nombre";
     $body = 
     "Nombre: $nombre
@@ -51,10 +51,9 @@ function procesarFormulario($data) {
     \nTelefono: $telefono
     \nIdentificacion: $identificacion
     \nTipo de Consulta: $tipoConsulta
-    \n
     \nMensaje:\n$message";
     
-    $headers = "From: hotelbatsu@gmail.com";
+    $headers = "From: example@example.com";
 
     // Intentar enviar el correo y devolver una respuesta en JSON
     if (mail($to, $subject, $body, $headers)) {
