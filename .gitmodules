@@ -1,0 +1,3 @@
+[submodule "vendor/symfony/cache-contracts"]
+	path = vendor/symfony/cache-contracts
+	url = https://github.com/symfony/cache-contracts
