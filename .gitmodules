@@ -81,13 +81,13 @@
 
 [submodule "vendor/psr/cache"]
     path = vendor/psr/cache
-    url = https://github.com/psr/cache.git
+    url = https://github.com/php-fig/cache.git
 [submodule "vendor/psr/container"]
     path = vendor/psr/container
-    url = https://github.com/psr/container.git
+    url = https://github.com/php-fig/container.git
 [submodule "vendor/psr/log"]
     path = vendor/psr/log
-    url = https://github.com/psr/log.git
+    url = https://github.com/php-fig/log.git
 
 
 
