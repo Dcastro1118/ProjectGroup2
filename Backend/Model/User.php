@@ -1,78 +1,104 @@
 <?php
 
+use Doctrine\ORM\Mapping\Column;
+use Doctrine\ORM\Mapping\Entity;
+use Doctrine\ORM\Mapping\GeneratedValue;
+use Doctrine\ORM\Mapping\Id;
+use Doctrine\ORM\Mapping\Table;
+
+#[Entity]
+#[Table('users')]
 class User{
-    
-    private $nombre;
-    private $usuario;
-    private $contraseña;
-    private $apellidos;
-    private $identificacion;
-    private $telefono;
-    private $correo;
-    private $genero;
+    #[Id]
+    #[Column, GeneratedValue]
+    private int $userId;
+    #[Column(nullable: false)]
+    private string $name;
+    #[Column(name: 'user_name')]
+    private string $username;
+    #[Column(nullable: false)]
+    private string $password;
+    #[Column(name:'last_name')]
+    private string $lastName;
+    #[Column(nullable: false)]
+    private string $identification;
+    #[Column(nullable: false)]
+    private string $phone;
+    #[Column(nullable: false)]
+    private string $email;
+    #[Column(nullable: false)]
+    private string $gender;
 
-    public function getNombre() {
-        return $this->nombre;
+
+
+
+
+    public function getId() {
+        return $this->userId;
     }
 
-    public function setNombre($nombre) {
-        $this->nombre = $nombre;
+    public function getName() {
+        return $this->name;
     }
 
-    public function getUsuario() {
-        return $this->usuario;
+    public function setName($name) {
+        $this->name = $name;
     }
 
-    public function setUsuario($usuario) {
-        $this->usuario = $usuario;
+    public function getUsername() {
+        return $this->username;
     }
 
-    public function getContraseña() {
-        return $this->contraseña;
+    public function setUsername($username) {
+        $this->username = $username;
     }
 
-    public function setContraseña($contraseña) {
-        $this->contraseña = $contraseña;
+    public function getPassword() {
+        return $this->password;
     }
 
-    public function getApellidos() {
-        return $this->apellidos;
+    public function setPassword($password) {
+        $this->password = $password;
     }
 
-    public function setApellidos($apellidos) {
-        $this->apellidos = $apellidos;
+    public function getLastName() {
+        return $this->lastName;
     }
 
-    public function getIdentificacion() {
-        return $this->identificacion;
+    public function setLastName($lastName) {
+        $this->lastName = $lastName;
     }
 
-    public function setIdentificacion($identificacion) {
-        $this->identificacion = $identificacion;
+    public function getIdentification() {
+        return $this->identification;
     }
 
-    public function getTelefono() {
-        return $this->telefono;
+    public function setIdentification($identification) {
+        $this->identification = $identification;
     }
 
-    public function setTelefono($telefono) {
-        $this->telefono = $telefono;
+    public function getPhone() {
+        return $this->phone;
     }
 
-    public function getCorreo() {
-        return $this->correo;
+    public function setPhone($phone) {
+        $this->phone = $phone;
     }
 
-    public function setCorreo($correo) {
-        $this->correo = $correo;
+    public function getEmail() {
+        return $this->email;
     }
 
-    public function getGenero() {
-        return $this->genero;
+    public function setEmail($email) {
+        $this->email = $email;
     }
 
-    public function setGenero($genero) {
-        $this->genero = $genero;
+    public function getGender() {
+        return $this->gender;
+    }
+
+    public function setGender($gender) {
+        $this->gender = $gender;
     }
 
 
