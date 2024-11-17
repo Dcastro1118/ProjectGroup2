@@ -1,0 +1,95 @@
+[submodule "vendor/symfony/cache-contracts"]
+	path = vendor/symfony/cache-contracts
+	url = https://github.com/symfony/cache-contracts
+
+[submodule "vendor/symfony/cache"]
+	path = vendor/symfony/cache
+	url = https://github.com/symfony/cache
+
+[submodule "vendor/symfony/console"]
+	path = vendor/symfony/console
+	url = https://github.com/symfony/console
+
+[submodule "vendor/symfony/deprecation-contracts"]
+	path = vendor/symfony/deprecation-contracts
+	url = https://github.com/symfony/deprecation-contracts
+
+[submodule "vendor/symfony/polyfill-ctype"]
+	path = vendor/symfony/polyfill-ctype
+	url = https://github.com/symfony/polyfill-ctype
+
+[submodule "vendor/symfony/polyfill-intl-grapheme"]
+	path = vendor/symfony/polyfill-intl-grapheme
+	url = https://github.com/symfony/polyfill-intl-grapheme
+
+[submodule "vendor/symfony/polyfill-intl-normalizer"]
+	path = vendor/symfony/polyfill-intl-normalizer
+	url = https://github.com/symfony/polyfill-intl-normalizer
+
+[submodule "vendor/symfony/polyfill-mbstring"]
+	path = vendor/symfony/polyfill-mbstring
+	url = https://github.com/symfony/polyfill-mbstring
+
+[submodule "vendor/symfony/service-contracts"]
+	path = vendor/symfony/service-contracts
+	url = https://github.com/symfony/service-contracts
+
+[submodule "vendor/symfony/string"]
+	path = vendor/symfony/string
+	url = https://github.com/symfony/string
+
+[submodule "vendor/symfony/var-exporter"]
+	path = vendor/symfony/var-exporter
+	url = https://github.com/symfony/var-exporter
+
+[submodule "vendor/doctrine/collections"]
+    path = vendor/doctrine/collections
+    url = https://github.com/doctrine/collections
+
+[submodule "vendor/doctrine/dbal"]
+    path = vendor/doctrine/dbal
+    url = https://github.com/doctrine/dbal.git
+
+
+[submodule "vendor/doctrine/deprecations"]
+    path = vendor/doctrine/deprecations
+    url = https://github.com/doctrine/deprecations.git
+
+[submodule "vendor/doctrine/event-manager"]
+    path = vendor/doctrine/event-manager
+    url = https://github.com/doctrine/event-manager.git
+	
+[submodule "vendor/doctrine/inflector"]
+    path = vendor/doctrine/inflector
+    url = https://github.com/doctrine/inflector.git
+
+[submodule "vendor/doctrine/instantiator"]
+    path = vendor/doctrine/instantiator
+    url = https://github.com/doctrine/instantiator.git
+
+[submodule "vendor/doctrine/lexer"]
+    path = vendor/doctrine/lexer
+    url = https://github.com/doctrine/lexer.git
+
+[submodule "vendor/doctrine/orm"]
+    path = vendor/doctrine/orm
+    url = https://github.com/doctrine/orm.git
+
+[submodule "vendor/doctrine/persistence"]
+    path = vendor/doctrine/persistence
+    url = https://github.com/doctrine/persistence.git
+
+[submodule "vendor/psr/cache"]
+    path = vendor/psr/cache
+    url = https://github.com/php-fig/cache.git
+[submodule "vendor/psr/container"]
+    path = vendor/psr/container
+    url = https://github.com/php-fig/container.git
+[submodule "vendor/psr/log"]
+    path = vendor/psr/log
+    url = https://github.com/php-fig/log.git
+
+
+
+
+
