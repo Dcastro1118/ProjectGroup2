@@ -286,7 +286,7 @@ h1 , h2{
     text-align: center;
 }
 
-img{
+.imagenAbout{ /*Imagen principal de la pantalla About_Us*/
     display: block;
     width: 95%;
     height: auto;
@@ -294,4 +294,87 @@ img{
     margin: 15px auto;
     border-radius: 5px;
     box-shadow: 8px 2px 8px rgb(0, 0, 0, 0.7);
+}
+
+
+/*-------------------------Servicios---------------------*/
+
+/* ------------- Seccion Diferenciales Servicios --------------------- */
+
+.diferencialesServicios {
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.difSer-uno, .difSer-dos, .difSer-tres, .difSer-cuatro, .difSer-cinco {
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+ /* box-shadow: 15px 15px 10px rgb(0, 0, 0, 0.7); */
+    perspective: 1000px;
+    padding: 2%;
+}
+.caraSer {
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.frontalSer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 113, 64, 0.579);
+}
+.traseraSer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transform: rotateY(180deg);
+    background-color:  rgba(89, 46, 15, 0.416);
+    padding: 30px;
+}
+
+.difSer-uno:hover .traseraSer{
+    transform: rotateY(0deg);
+}
+.difSer-uno:hover .frontalSer{
+    transform: rotateY(180deg);
+}
+.difSer-dos:hover .traseraSer{
+    transform: rotateY(0deg);
+}
+.difSer-dos:hover .frontalSer{
+    transform: rotateY(180deg);
+}
+.difSer-tres:hover .traseraSer{
+    transform: rotateY(0deg);
+}
+.difSer-tres:hover .frontalSer{
+    transform: rotateY(180deg);
+}
+
+.estacionamiento_img, .piscina_img, .restaurante_img, .gym_img, .spa_img, .guarderiaM_img, .guarderia_img, .senderismo_img{
+    display: block;
+    width: 80%;
+    height: auto;
+    padding:0;
+    margin: 15px auto;
+    border-radius: 5px;
+    box-shadow: 4px 2px 4px rgb(0, 0, 0, 0.7);
 }
