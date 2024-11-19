@@ -369,6 +369,20 @@ h1 , h2{
     transform: rotateY(180deg);
 }
 
+.difSer-cuatro:hover .traseraSer{
+    transform: rotateY(0deg);
+}
+.difSer-cuatro:hover .frontalSer{
+    transform: rotateY(180deg);
+}
+
+.difSer-cinco:hover .traseraSer{
+    transform: rotateY(0deg);
+}
+.difSer-cinco:hover .frontalSer{
+    transform: rotateY(180deg);
+}
+
 .estacionamiento_img, .piscina_img, .restaurante_img, .gym_img, .spa_img, .guarderiaM_img, .guarderia_img, .senderismo_img{
     display: block;
     width: 80%;
