@@ -420,6 +420,32 @@ h1 , h2{
     transform: rotateY(180deg);
 }
 
+.contenedor_galeria{
+    display: flex;
+    justify-content: center;
+}
+
+#galeria{
+    display: flex;
+    width: 1500px;
+
+}
+
+#galeria img{
+width: 0px;
+flex-grow: 1;
+object-fit: cover;
+height: 500px;
+transition: 1s ease;
+}
+
+#galeria img:hover{
+    cursor: crosshair;
+    width: 300px;
+    filter: contrast(120%);
+}
+
+
 .estacionamiento_img, .piscina_img, .restaurante_img, .gym_img, .spa_img, .guarderiaM_img, .guarderia_img, .senderismo_img{
     display: block;
     width: 80%;

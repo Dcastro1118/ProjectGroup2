@@ -7,7 +7,7 @@ link-> https://dcastro1118.github.io/ProjectGroup2/Frontend/HTML/index.html
 
   David Castro
   Joselyn Brenes Espinoza
-  Kendal Campos Valeri
+  Kendal Campos Valerio
   Marco Briones
 
 
