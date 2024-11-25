@@ -16,24 +16,14 @@
             <!--Accesos directos-->
 
             <!--Contenedor de botones-->
-            <div class="Container_header_menu">
+
 
                 <!--Etiqueta botones navegación-->
-                <nav>
+                <?php
+                include "./Componentes/menu.html";
+                ?>
 
-                    <!--Botones header-->
-                    <button class="botones_menu" id="Button_Main"><a class="link_botones"
-                            href="index.html">Principal</a></button>
-                    <button class="botones_menu" id="Button_Services"><a class="link_botones"
-                            href="Main_Services.html">Servicios</a></button>
-                    <button class="botones_menu" id="Button_Contact"><a class="link_botones"
-                            href="Contac_Us.html">Contacto</a></button>
-                    <button class="botones_menu" id="Button_About"><a class="link_botones" href="About_Us.html">Nosotros</a></button>
-                    <button class="botones_menu active" id="Button_About"><a class="link_botones" href="Login.html">Ingresar</a></button>
 
-                </nav>
-
-            </div>
 
         </header>
         <main>
@@ -66,24 +56,14 @@
 
 
                     </form>
-                    <a class="m-3" href="Register.html">¿No tienes cuenta? ¡Registrate! </a>
-                    <a class="m-1" href="Register.html">¿Olvidaste tu contraseña? </a>
+                    <a class="m-3" href="Register.php">¿No tienes cuenta? ¡Registrate! </a>
+                    <a class="m-1" href="Login.php">¿Olvidaste tu contraseña? </a>
                 </div>
             </section>
         </main>
-        <footer>
-
-            <!--Divisor-->
-            <hr>
-
-            <!--Contenedor del footer-->
-            <div class="container_footer_general_others">
-
-                <p>Bla, bla, bla... todos los derechos reservados</p>
-
-            </div>
-
-        </footer>
+        <?php
+    include "./Componentes/footer.html";
+    ?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

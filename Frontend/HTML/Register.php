@@ -16,25 +16,11 @@
             <!--Accesos directos-->
 
             <!--Contenedor de botones-->
-            <div class="Container_header_menu">
 
                 <!--Etiqueta botones navegación-->
-                <nav>
-
-                    <!--Botones header-->
-                    <button class="botones_menu" id="Button_Main"><a class="link_botones"
-                            href="index.html">Principal</a></button>
-                    <button class="botones_menu" id="Button_Services"><a class="link_botones"
-                            href="Main_Services.html">Servicios</a></button>
-                    <button class="botones_menu" id="Button_Contact"><a class="link_botones"
-                            href="Contac_Us.html">Contacto</a></button>
-                    <button class="botones_menu" id="Button_About"><a class="link_botones" href="About_Us.html">Nosotros</a></button>
-                    <button class="botones_menu" id="Button_About"><a class="link_botones" href="Login.html">Ingresar</a></button>
-
-                </nav>
-
-            </div>
-
+                <?php
+                include "./Componentes/menu.html";
+                ?>
 
         </header>
         <main>
@@ -101,22 +87,12 @@
 
         </main>
 
-        <footer>
+            <!-- Footer -->
+        <?php
+    include "./Componentes/footer.html";
+    ?>
+        <!-- Finaliza Footer -->
 
-        </footer>
-        <footer>
-
-            <!--Divisor-->
-            <hr>
-
-            <!--Contenedor del footer-->
-            <div class="container_footer_general_others">
-
-                <p>Bla, bla... todos los derechos reservados</p>
-
-            </div>
-
-        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

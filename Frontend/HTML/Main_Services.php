@@ -18,29 +18,14 @@
     <div class="external_container">
 
         <header>
-
-
             <!--Accesos directos-->
 
             <!--Contenedor de botones-->
-            <div class="Container_header_menu">
 
                 <!--Etiqueta botones navegación-->
-                <nav>
-
-                    <!--Botones header-->
-                    <button class="botones_menu" id="Button_Main"><a class="link_botones" href="index.html">Principal</a></button>
-                    <button class="botones_menu active" id="Button_Services"><a class="link_botones"
-                            href="Main_Services.html">Servicios</a></button>
-                    <button class="botones_menu" id="Button_Contact"><a class="link_botones"
-                            href="Contac_Us.html">Contacto</a></button>
-                    <button class="botones_menu" id="Button_About"><a class="link_botones" href="About_Us.html">Nosotros</a></button>
-                    <button class="botones_menu" id="Button_About"><a class="link_botones" href="Login.html">Ingresar</a></button>
-
-                </nav>
-
-            </div>
-
+                <?php
+                include "./Componentes/menu.html";
+                ?>
 
         </header>
 
@@ -220,23 +205,9 @@
 
 
         </main>
-        <footer>
-
-            <!--Divisor-->
-            <hr>
-
-            <!--Contenedor del footer-->
-            <div class="container_footer_subcontainers">
-
-            </div>
-
-            <div class="container_footer_general_others">
-
-                <h6 style="text-align: center;">&copy; Hotel Bitsú-2024</h6>
-
-            </div>
-
-        </footer>
+        <?php
+    include "./Componentes/footer.html";
+    ?>
     </div>
 
     <!-- Latest compiled JavaScript -->

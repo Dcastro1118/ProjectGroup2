@@ -20,39 +20,24 @@
 <body>
     <div class="external_container">
         <header>
-
-
             <!--Accesos directos-->
 
             <!--Contenedor de botones-->
-            <div class="Container_header_menu">
 
                 <!--Etiqueta botones navegación-->
-                <nav>
-
-                    <!--Botones header-->
-                    <button class="botones_menu" id="Button_Main"><a class="link_botones" href="index.html">Principal</a></button>
-                    <button class="botones_menu" id="Button_Services"><a class="link_botones"
-                            href="Main_Services.html">Servicios</a></button>
-                    <button class="botones_menu" id="Button_Contact"><a class="link_botones"
-                            href="Contac_Us.html">Contacto</a></button>
-                    <button class="botones_menu active" id="Button_About"><a class="link_botones"
-                            href="About_Us.html">Nosotros</a></button>
-                    <button class="botones_menu" id="Button_About"><a class="link_botones" href="Login.html">Ingresar</a></button>
-                </nav>
-
-            </div>
-
+                <?php
+                include "./Componentes/menu.html";
+                ?>
 
         </header>
 
         <main>
-            <h1>Hotel Bitsú</h1>
+            <h1 class="m-5">Hotel Bitsú</h1>
             <img class="imagenAbout" src="../Resources/General/Imagen_Sobre nosotros.png" alt="hotel">
             <br>
             
-            <h2>Destacado por...</h2>
-            <div class="aboutUs_hotel m-5">
+            <h2 class="m-4">Destacado por...</h2>
+            <div class="aboutUs_hotel m-auto">
                 <p>
                     <b> Ser un refugio de paz con vistas a las impresionantes montañas de Costa Rica, rodeado por un vasto paisaje de bosques nubosos y tropicales lluviosos, el cual
                         ofrece diferentes paquetes turísticos con actividades al aire libre como senderismo, ciclismo, kayak y rafting, entre muchas otras actividades, además 
@@ -67,8 +52,8 @@
             </div>
             <br>
 
-            <h2>Misión</h2>
-            <div class="aboutUs_hotel m-5">
+            <h2 class="m-4">Misión</h2>
+            <div class="aboutUs_hotel m-auto">
                 <p>
                     <b>"Nuestra misión es brindarle a nuestros huéspedes una experiencia única de descanso y aventura en un entorno natural, ofreciendo alojamiento e instalaciones de alta  
                         calidad así como innovadoras, servicios personalizados y actividades al aire libre que permitan a nuestros huéspedes desconectar del estrés diario 
@@ -78,8 +63,8 @@
             </div>
             <br>
 
-            <h2>Visión</h2>
-            <div class="aboutUs_hotel m-5">
+            <h2 class="m-4">Visión</h2>
+            <div class="aboutUs_hotel m-auto mb-5">
                 <p> 
                     <b>"Nuestra visión es ser el destino preferido de los aventureros que buscan una escapada en la montaña para encontrar el equilibrio perfecto entre la relajación, 
                         la aventura y la conexión con la naturaleza, destacándonos por nuestra arquitectura innovadora, nuestra excelencia de servicio y un compromiso constante con el 
@@ -87,29 +72,14 @@
                     </b>    
                 </p>
             </div>
-            <br>
 
 
         </main>
 
+    <?php
+    include "./Componentes/footer.html";
+    ?>
 
-        <footer>
-
-            <!--Divisor-->
-            <hr>
-
-            <!--Contenedor del footer-->
-            <div class="container_footer_subcontainers">
-
-            </div>
-
-            <div class="container_footer_general_others">
-
-                <h6 style="text-align: center;">&copy; Hotel Bitsú-2024</h6>
-
-            </div>
-
-        </footer>
     </div>
 
     <!-- Latest compiled JavaScript -->

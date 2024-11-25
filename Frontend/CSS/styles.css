@@ -43,12 +43,30 @@ footer{
     align-items: center;
   /* background: linear-gradient(125deg, #8D5A4A, #EDE9DD); */
     height: 50px;
-
 }
 /* -------------Menu------------- */
 nav{
     height: 100%;
+    width: 100%;
+    margin: 0px 20px 0px 15px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.logo-section{
+    width: 100px; /* Ancho del recorte */
+    height: 100px; /* Altura del recorte */
+    overflow: hidden; /* Oculta el contenido que exceda los límites */
+    position: relative;
+}
+
+.logo-section img{
+    width: 100%; /* Ajusta según necesites */
+    height: auto;
+    position: absolute; /* Permite mover la imagen */
+    top: -25px; /* Ajusta para centrar */
+}
+
 .botones_menu{
     height: 100%;
     background: none;
@@ -59,6 +77,7 @@ nav{
 }
 .link_botones{
     text-decoration: none;
+    font-size: clamp(0.7rem, 1.2vw, 1.3rem);
     color: #c6c5c1;
 }
 .botones_menu.active {
@@ -78,7 +97,7 @@ nav{
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 60vh;
+        height: 500px;
         gap: 1%;
         padding: 0;
         margin: 0;
@@ -90,7 +109,7 @@ nav{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 35%;
+        width: 50%;
         height: 100%;
         overflow: hidden;
         padding: 10px;
@@ -102,7 +121,7 @@ nav{
     }
 
     .nombre_hotel h2{
-        font-size: clamp(2rem, 1.2rem, 3rem);
+        font-size: clamp(1.3rem, 1.6rem, 2.2rem);
     }
 
     .idx_container_video{
@@ -111,7 +130,7 @@ nav{
         flex-direction: column;
         width: 100%;
         height: auto;
-        margin-right: 1%;
+        margin-right: 2%;
 
     }
 
@@ -257,7 +276,7 @@ nav{
 }
 
 #register_box{
-    background-color: rgba(185, 185, 185, 0.801);
+    background-color: #0044459b;
     width: 500px;
     height: 900px;
     border-radius: 15px;
