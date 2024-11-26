@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS `users` (
     `user_name` VARCHAR(15) NOT NULL,
     `phone` VARCHAR(15) NOT NULL,
     `email` VARCHAR(40) NOT NULL,
-    `password` VARCHAR(20) NOT NULL,
-    `identificacion` VARCHAR(30) NOT NULL,
+    `password` VARCHAR(80) NOT NULL,
+    `identificacion` VARCHAR(30) NOT NULL UNIQUE,
     `gender` VARCHAR(12) NOT NULL
 );
 CREATE TABLE IF NOT EXISTS `reservations` (

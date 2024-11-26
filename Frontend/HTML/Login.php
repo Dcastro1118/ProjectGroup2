@@ -41,10 +41,11 @@
                     <h2 style="font-size: clamp(13px, 1.5vw, 30px);" class="m-4 ">Iniciar sesion</h2>
                     <!--Etiqueta formulario-->
                     <form id="login_form" class="d-flex flex-column justify-content-center align-content-center text-center w-75"
-                        style="width: 300px;" id="contact_form" method="post">
+                        style="width: 300px;" id="login_form" method="post">
 
-                        <label class="mb-2" for="correo">Correo Electrónico:</label>
-                        <input class="form-control mb-3" type="email" id="correo" name="correo" required>
+                        <input type="hidden" name="action" value="login">
+                        <label class="mb-2" for="identificacion">Identificación:</label>
+                        <input class="form-control mb-3" type="email" id="identificacion" name="identificacion" required>
                         <span class="error" id="correoError"></span>
 
                         <label class="mb-2" for="contraseña">Contraseña:</label>
@@ -65,8 +66,9 @@
     include "./Componentes/footer.html";
     ?>
     </div>
+    <script src="../JS/user-session.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="../JS/auth-request.js"></script>
 </body>
 
 </html>

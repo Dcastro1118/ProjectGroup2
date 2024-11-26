@@ -189,6 +189,7 @@
 
     </div>
 
+    <script src="../JS/user-session.js"></script>
     <!-------Script de bootstrap(Al final para que cargue despues de cargar todo lo visual)-------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 

@@ -11,17 +11,17 @@ use Doctrine\ORM\Mapping\Table;
 class User{
     #[Id]
     #[Column, GeneratedValue]
-    private int $userId;
+    private int $user_id;
     #[Column(nullable: false)]
     private string $name;
     #[Column(name: 'user_name')]
-    private string $username;
+    private string $user_name;
     #[Column(nullable: false)]
     private string $password;
     #[Column(name:'last_name')]
-    private string $lastName;
+    private string $last_name;
     #[Column(nullable: false)]
-    private string $identification;
+    private string $identificacion;
     #[Column(nullable: false)]
     private string $phone;
     #[Column(nullable: false)]
@@ -34,7 +34,7 @@ class User{
 
 
     public function getId() {
-        return $this->userId;
+        return $this->user_id;
     }
 
     public function getName() {
@@ -46,11 +46,11 @@ class User{
     }
 
     public function getUsername() {
-        return $this->username;
+        return $this->user_name;
     }
 
     public function setUsername($username) {
-        $this->username = $username;
+        $this->user_name = $username;
     }
 
     public function getPassword() {
@@ -62,19 +62,19 @@ class User{
     }
 
     public function getLastName() {
-        return $this->lastName;
+        return $this->last_name;
     }
 
     public function setLastName($lastName) {
-        $this->lastName = $lastName;
+        $this->last_name = $lastName;
     }
 
     public function getIdentification() {
-        return $this->identification;
+        return $this->identificacion;
     }
 
     public function setIdentification($identification) {
-        $this->identification = $identification;
+        $this->identificacion = $identification;
     }
 
     public function getPhone() {

@@ -67,6 +67,15 @@ nav{
     top: -25px; /* Ajusta para centrar */
 }
 
+.end-section{
+    height: 100%;
+    display: flex;
+}
+
+.end-section button{
+    display: none;
+}
+
 .botones_menu{
     height: 100%;
     background: none;
