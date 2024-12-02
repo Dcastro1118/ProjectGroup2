@@ -38,10 +38,10 @@
                 <section class="diferencialesServicios">
                     <!--Contenedor Diferencial Servicios 1-->
                     <div class="difSer-uno">
+                        <h3><i>Estacionamiento</i></h3>
                         <!--cara frontal-->
                         <div class="caraSer frontalSer">
-                            <h3><i>Estacionamiento</i></h3>
-                            <img class="estacionamiento_img" src="../Resources/Servicios/Estacionamiento.png" alt="estacionamiento">
+                            <img class="formato_img2" src="../Resources/Servicios/Estacionamiento.png" alt="estacionamiento">
                         </div>
 
                         <!--cara trasera-->
@@ -56,10 +56,11 @@
 
                     <!--Contenedor Diferencial Servicios 2-->
                     <div class="difSer-dos">
+                        <h3><i>Restaurante</i></h3>
                         <!--cara frontal-->
                         <div class="caraSer frontalSer">
-                            <h3><i>Restaurante</i></h3>
-                            <img class="restaurante_img" src="../Resources/Servicios/Restaurante.png" alt="restaurante">
+                            
+                            <img class="formato_img2" src="../Resources/Servicios/Restaurante.png" alt="restaurante">
                         </div>
 
                         <!--cara trasera-->
@@ -75,16 +76,15 @@
 
                     <!--Contenedor Diferencial Servicios 3-->
                     <div class="difSer-tres">
+                        <h3><i>Piscina</i></h3>
                         <!--cara frontal-->
                         <div class="caraSer frontalSer">
-                            <h3><i>Piscina</i></h3>
-                            <img class="piscina_img" src="../Resources/Servicios/Piscina.png" alt="piscina">
+                            <img class="formato_img2" src="../Resources/Servicios/Piscina.png" alt="piscina">
                         </div>
 
                         <!--cara trasera-->
                         <div class="caraSer traseraSer">
-                            <h6>Todas nuestras habitaciones incluye un delicioso desayuno tipico de la zona, para
-                                que puedas disfrutar tus vacaciones sin tener que pensar en los detalles
+                            <h6>Contamos con una piscina ideal para compartir con todo la familia y disfruatar con tus seres queridos
                             </h6>
                         </div>
                     </div>
@@ -96,23 +96,30 @@
             <!--------------Finaliza seccion de los diferenciales -------------->
 
 
-            <!--prueba-->
+            <!--Servidos Adicionales-->
             <div class="contenedor_galeria d-flex flex-column align-items-center m-4">
                 <h1 class="mb-5" style="text-align: center;">Servicios Adicionales</h1>
+
             <section class="mb-5" id="galeria">
-                <img src="../Resources/Servicios/GYM.png" alt="">
-                <img src="../Resources/Servicios/Guarderia Masc.png" alt="">
-                <img src="../Resources/Servicios/Senderismo.png" alt="">
-                <img src="../Resources/Servicios/Guarderia.png" alt="">
-                <img src="../Resources/Servicios/SPA.png" alt="">
+                <img class="formato_img" src="../Resources/Servicios/GYM.png" alt="">
+                <img class="formato_img" src="../Resources/Servicios/Senderismo.png" alt="">
+                <img class="formato_img" src="../Resources/Servicios/SPA.png" alt="">
+            </section>
+            </div>
+            <!--Fin-Servidos Adicionales-->
+
+            <!--Servidos de Guarderias -->
+
+            <div class="contenedor_galeria d-flex flex-column align-items-center m-4">
+                <h1 class="mb-5" style="text-align: center;">Servicios de Guarderia</h1>
+
+            <section class="mb-5" id="galeria">
+                <img class="formato_img" src="../Resources/Servicios/Guarderia Masc.png" alt="">
+                <img class="formato_img" src="../Resources/Servicios/Guarderia.png" alt="">
             </section>
             </div>
 
-
-
-
-
-
+            <!--Fin- Servidos de Guarderias -->
 
 
             <!-------------Seccion del Carrusel------------->
@@ -127,12 +134,12 @@
                     <div class="carousel-inner">
                         <!--Contenedor Imagen #1-->
                         <div class="carousel-item active" style="height: 600px;">
-                            <img src="../Resources/Servicios/Habitaciones/Suite.png" class="d-block w-100 h-100"
+                            <img src="../Resources/Servicios/Habitaciones/Suite.png" class="d-block w-100 h-100 formato_img2"
                                 style="object-fit: cover">
                         </div>
                         <!--Contenedor Imagen #2-->
                         <div class="carousel-item" style="height: 600px;">
-                            <img src="../Resources/Servicios/Habitaciones/SuiteBaño.png" class="d-block w-100 h-100"
+                            <img src="../Resources/Servicios/Habitaciones/SuiteBaño.png" class="d-block w-100 h-100 formato_img2"
                                 style="object-fit: cover">
                         </div>
                     </div> 
