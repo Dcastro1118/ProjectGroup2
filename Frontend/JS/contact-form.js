@@ -1,4 +1,13 @@
 document.getElementById("contact_form").addEventListener("submit", sendJson) 
+document.getElementById("ver-mapa").addEventListener("click", verMapa)
+
+    function verMapa(){
+        location.href = 'http://localhost/ProjectGroup2/Frontend/HTML/Mapa.php';
+    }
+
+
+
+
     function sendJson (event){
     event.preventDefault(); 
     // Capturar los datos del formulario

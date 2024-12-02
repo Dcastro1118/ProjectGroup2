@@ -4,20 +4,23 @@
 require_once '../Config/dbConection.php';
 require_once '../Model/User.php';
 require_once '../Config/Bootstrap.php';
+require_once 'SessionService.php';
 
 class UserService
 {
     private $entityManager;
+    private $SessionService;
 
     public function __construct()
     {
         // Obtener la conexión desde dbConection (requiere un EntityManager de Doctrine)
         $this->entityManager = Bootstrap::getEntityManager();
+        $this->SessionService = new SessionService();
+
     }
 
     public function loginUsuario($data) {
         if (isset($data['identificacion'], $data['password'])) {
-
             $user = $this->entityManager->getRepository(User::class)->findOneBy(['identificacion' => $data['identificacion']]);
 
             if (!$user) {
@@ -34,14 +37,8 @@ class UserService
                 return;
             }
             // Si el login es exitoso, devolver respuesta
-            $sessionId = bin2hex(random_bytes(32));
-            setcookie('session_id', $sessionId, [
-                'expires' => time() + 3600,  // Expira en 1 hora
-                'path' => '/',               // Disponible en toda la aplicación
-                'secure' => true,            // Solo en HTTPS
-                'httponly' => true,          // No accesible desde JavaScript 
-                'samesite' => 'Strict',      // Protege contra ataques CSRF
-            ]);
+
+            $this->SessionService->iniciarSesion($user);
             $usuario = [
                 "id" => $user->getId(),
                 "nombre" => $user->getName() . " " . $user->getLastName(),

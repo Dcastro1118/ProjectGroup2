@@ -45,11 +45,11 @@
 
                         <input type="hidden" name="action" value="login">
                         <label class="mb-2" for="identificacion">Identificación:</label>
-                        <input class="form-control mb-3" type="email" id="identificacion" name="identificacion" required>
+                        <input class="form-control mb-3" type="text" id="identificacion" name="identificacion" required>
                         <span class="error" id="correoError"></span>
 
                         <label class="mb-2" for="contraseña">Contraseña:</label>
-                        <input class="form-control" type="password" id="contraseña" name="contraseña" required>
+                        <input class="form-control" type="password" id="password" name="password" required>
                         <span class="error" id="contraseñaError"></span>
 
                         <button class="botones_login btn btn-dark mb-3 mt-3" type="submit">¡Iniciar sesion!</button>

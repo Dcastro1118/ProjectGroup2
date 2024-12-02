@@ -54,7 +54,12 @@
                         <img class="logos_redes" src="../Resources/facebookicono.png" alt="">
                         <img class="logos_redes" src="../Resources/instagramicono.png" alt="">
 
+
                     </div>
+                    <button id="ver-mapa" class="btn btn-dark mt-3">Ver mapa</button>
+
+
+
                 </div>
 
                 <!--Contenedor formualrio de contacto-->

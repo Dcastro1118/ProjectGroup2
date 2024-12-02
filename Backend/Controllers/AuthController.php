@@ -28,7 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif ($data['action'] == 'login') {
         // Crear instancia de AuthController
         $authController = new UserService();
-
         // Registrar el usuario
         $response = $authController->loginUsuario($data);
     
