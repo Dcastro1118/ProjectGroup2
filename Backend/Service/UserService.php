@@ -25,27 +25,32 @@ class UserService
                 echo json_encode(['error' => 'Usuario no encontrado']);
                 return;
             }
-    
             // Validar contraseña (asumiendo que usas hashing de contraseñas)
             if (!password_verify($data['password'], $user->getPassword())) {
+
                 header('Content-Type: application/json', true, 401);
+
                 json_encode(['error' => 'Contraseña incorrecta']);
                 return;
             }
-    
             // Si el login es exitoso, devolver respuesta
-
+            $sessionId = bin2hex(random_bytes(32));
+            setcookie('session_id', $sessionId, [
+                'expires' => time() + 3600,  // Expira en 1 hora
+                'path' => '/',               // Disponible en toda la aplicación
+                'secure' => true,            // Solo en HTTPS
+                'httponly' => true,          // No accesible desde JavaScript 
+                'samesite' => 'Strict',      // Protege contra ataques CSRF
+            ]);
             $usuario = [
                 "id" => $user->getId(),
                 "nombre" => $user->getName() . " " . $user->getLastName(),
                 "email" => $user->getEmail()
             /*  "foto" => "https://ejemplo.com/foto.jpg"*/
             ];
-
             header('Content-Type: application/json', true, 200);
             echo json_encode(['Usuario' => $usuario]);
             return;
-
         } else {
             header('Content-Type: application/json', true, 400);
             echo json_encode(['error' => 'Datos incompletos']);

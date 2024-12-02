@@ -30,9 +30,6 @@ class User{
     private string $gender;
 
 
-
-
-
     public function getId() {
         return $this->user_id;
     }

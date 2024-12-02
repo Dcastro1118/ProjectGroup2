@@ -178,14 +178,179 @@
         </main>
         <!-----------Finaliza la Seccion del Carrusel----------->
 
+        <!-----------------------Seccion de testimonios----------------------->
+
+
+
+        <section>
+        <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center">
+        <div class="card mx-3 text-center active-card">
+          <div class="card-body">
+            <div class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px; background-color: #e0e0e0;">
+              <img src="ruta-imagen1.png" alt="Avatar" class="img-fluid rounded-circle">
+            </div>
+            <p class="card-text">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            </p>
+            <h5 class="card-title">Nombre 1</h5>
+          </div>
+        </div>
+        <div class="card mx-3 text-center gray-card">
+          <div class="card-body">
+            <div class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px; background-color: #e0e0e0;">
+              <img src="ruta-imagen2.png" alt="Avatar" class="img-fluid rounded-circle">
+            </div>
+            <p class="card-text">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            </p>
+            <h5 class="card-title">Nombre 2</h5>
+          </div>
+        </div>
+        <div class="card mx-3 text-center gray-card">
+          <div class="card-body">
+            <div class="rounded-circle mx-auto mb-3" style="width: 80px; height: 80px; background-color: #e0e0e0;">
+              <img src="ruta-imagen3.png" alt="Avatar" class="img-fluid rounded-circle">
+            </div>
+            <p class="card-text">
+              "Lorem ipsum dolor sit amet."
+            </p>
+            <h5 class="card-title">Nombre 3</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center">
+        <!-- Más tarjetas aquí -->
+      </div>
+    </div>
+  </div>
+  <!-- Controles -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+
+
+
+
+        <div id="carouselComments" class="carousel slide mx-auto p-2" style="width: 80%;">
+                <div class="carousel-inner">
+                    <!--Contenedor Imagen #1-->
+                    <div class="carousel-item active" style="height: 600px;">
+                    <div class="d-flex justify-content-center" >
+                    <div class="card" style="width: 18rem;">
+                    <img src="../Resources/Comments/Sofia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h2>Sofía G.</h2>
+                    <p class="card-text">El mejor hotel en el que me he hospedado. 
+                        Las habitaciones son amplias, modernas y con una vista espectacular al mar. El personal siempre fue amable y atento a cada detalle. Sin duda, volveré en mis próximas vacaciones.</p>
+                    </div>
+                    </div>
+                </div>
+        </div>
+                    <!--Contenedor Imagen #2-->
+                    <div class="carousel-item" style="height: 600px;">
+                    <div class="d-flex justify-content-center" >
+                    <div class="card" style="width: 18rem;">
+                        <img src="../Resources/Comments/Carlos.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h2>Carlos M.</h2>
+                            <p class="card-text">Pasé una semana aquí con mi familia y fue una experiencia increíble. Mis hijos disfrutaron mucho de la piscina y las actividades organizadas.
+                            El restaurante ofrece una variedad deliciosa de platillos locales e internacionales. ¡Recomendado al 100%!</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!--Contenedor Imagen #3-->
+                    <div class="carousel-item" style="height: 600px;">
+                        <div class="d-flex justify-content-center" >
+                    <div class="card" style="width: 18rem;">
+                    <img src="../Resources/Comments/Laura.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h2>Laura P.</h2>
+                        <p class="card-text">Un lugar de ensueño. La tranquilidad del hotel, combinado con la naturaleza que lo rodea, hizo de nuestra estancia algo mágico. 
+                        El spa es excelente, perfecto para relajarse después de un día explorando la zona. ¡Volveré pronto!</p>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+    
+                </div>
+                <!--Boton anterior-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselComments"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <!--Boton siguiente-->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselComments"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        <h2 class="m-5">Reseñas</h2>
+
+        <div class="d-flex justify-content-evenly mt-5 mb-5">
+
+<div class="card" style="width: 18rem;">
+  <img src="../Resources/Comments/Sofia.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+  <h2>Sofía G.</h2>
+    <p class="card-text">El mejor hotel en el que me he hospedado. 
+    Las habitaciones son amplias, modernas y con una vista espectacular al mar. El personal siempre fue amable y atento a cada detalle. Sin duda, volveré en mis próximas vacaciones.</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="../Resources/Comments/Carlos.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+  <h2>Carlos M.</h2>
+    <p class="card-text">Pasé una semana aquí con mi familia y fue una experiencia increíble. Mis hijos disfrutaron mucho de la piscina y las actividades organizadas.
+    El restaurante ofrece una variedad deliciosa de platillos locales e internacionales. ¡Recomendado al 100%!</p>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="../Resources/Comments/Laura.png" class="card-img-top" alt="...">
+  <div class="card-body">
+  <h2>Laura P.</h2>
+    <p class="card-text">Un lugar de ensueño. La tranquilidad del hotel, combinado con la naturaleza que lo rodea, hizo de nuestra estancia algo mágico. 
+    El spa es excelente, perfecto para relajarse después de un día explorando la zona. ¡Volveré pronto!</p>
+  </div>
+</div>
+
+</div>
+
+
+
+</section>
+
+
+        <!-----------------------Finaliza seccion de testimonios----------------------->
+
+
+
+
+
+
 
         <?php
     include "./Componentes/footer.html";
     ?>
-
-        <!-- Latest compiled JavaScript -->
-
-
 
     </div>
 

@@ -231,6 +231,34 @@ nav{
     transform: rotateY(180deg);
 }
 
+
+/* Seccio comentarios */
+
+.caja-comentarios{
+    margin: 2%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #0044459b;
+    display: flex;
+}
+
+.comentarios{
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-comentarios img{
+width: 140px;
+border-radius: 10px;
+margin-right: 2%;
+}
+
+
+
+
+
+
+
 /*Footer*/
 
 .container_footer_general_others{
