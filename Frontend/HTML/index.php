@@ -137,27 +137,27 @@
                 <div class="carousel-inner">
                     <!--Contenedor Imagen #1-->
                     <div class="carousel-item active" style="height: 600px;">
-                        <img src="../Resources/Carrusel/Monte Verde.jpg" class="d-block w-100 h-100"
+                        <img src="../Resources/Carrusel/Monte Verde.jpg" class="d-block w-100 h-100 formato_img2"
                             style="object-fit: cover">
                     </div>
                     <!--Contenedor Imagen #2-->
                     <div class="carousel-item" style="height: 600px;">
-                        <img src="../Resources/Carrusel/Monte Verde2.jpg" class="d-block w-100 h-100"
+                        <img src="../Resources/Carrusel/Monte Verde2.jpg" class="d-block w-100 h-100 formato_img2"
                             style="object-fit: cover">
                     </div>
                     <!--Contenedor Imagen #3-->
                     <div class="carousel-item" style="height: 600px;">
-                        <img src="../Resources/Carrusel/Monte Verde3.jpg" class="d-block w-100 h-100"
+                        <img src="../Resources/Carrusel/Monte Verde3.jpg" class="d-block w-100 h-100 formato_img2"
                             style="object-fit: cover">
                     </div>
                     <!--Contenedor Imagen #4-->
                     <div class="carousel-item" style="height: 600px;">
-                        <img src="../Resources/Carrusel/Monte Verde4.jpg" class="d-block w-100 h-100"
+                        <img src="../Resources/Carrusel/Monte Verde4.jpg" class="d-block w-100 h-100 formato_img2"
                             style="object-fit: cover">
                     </div>
                     <!--Contenedor Imagen #5-->
                     <div class="carousel-item" style="height: 600px;">
-                        <img src="../Resources/Carrusel/Monte Verde5.jpg" class="d-block w-100 h-100"
+                        <img src="../Resources/Carrusel/Monte Verde5.jpg" class="d-block w-100 h-100 formato_img2"
                             style="object-fit: cover">
                     </div>
                 </div>
@@ -341,6 +341,98 @@
 
 
         <!-----------------------Finaliza seccion de testimonios----------------------->
+
+        <!-----------------------Seccion de testimonios- SlideInfinito----------------------->
+
+        
+
+        <section>
+        <h2 class="m-5">Reseñas</h2>
+          <div class="slider">
+            <div class="slide-track">
+              
+            <div class="slide m5">
+                <div class="card mx-3 text-center active-card">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 75%; height: auto; background-color: #e0e0e0;">
+                      <img src="../Resources/Comments/Sofia.jpg" alt="Avatar" class="img-fluid rounded-circle">
+                    </div>
+                    <h2>Sofía G.</h2>
+                    <p class="card-text">El mejor hotel en el que me he hospedado. 
+                    Las habitaciones son amplias, modernas y con una vista espectacular al mar. El personal siempre fue amable y atento a cada detalle. Sin duda, volveré en mis próximas vacaciones.</p>
+                  </div>
+                </div>
+            </div>
+
+              <div class="slide m5">
+                <div class="card mx-3 text-center active-card">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 75%; height: auto; background-color: #e0e0e0;">
+                      <img src="../Resources/Comments/Carlos.jpg" alt="Avatar" class="img-fluid rounded-circle">
+                    </div>
+                    <h2>Carlos M.</h2>
+                    <p class="card-text">Pasé una semana aquí con mi familia y fue una experiencia increíble. Mis hijos disfrutaron mucho de la piscina y las actividades organizadas.
+                    El restaurante ofrece una variedad deliciosa de platillos locales e internacionales. ¡Recomendado al 100%!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide m5">
+                <div class="card mx-3 text-center active-card">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 75%; height: auto; background-color: #e0e0e0;">
+                      <img src="../Resources/Comments/Laura.png" alt="Avatar" class="img-fluid rounded-circle">
+                    </div>
+                    <h2>Laura P.</h2>
+                    <p class="card-text">Un lugar de ensueño. La tranquilidad del hotel, combinado con la naturaleza que lo rodea, hizo de nuestra estancia algo mágico. 
+                    El spa es excelente, perfecto para relajarse después de un día explorando la zona. ¡Volveré pronto!</p>
+                  </div>
+                </div>
+              </div>
+
+                <!--again-->
+                <div class="slide m5">
+                <div class="card mx-3 text-center active-card">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 75%; height: auto; background-color: #e0e0e0;">
+                      <img src="../Resources/Comments/Sofia.jpg" alt="Avatar" class="img-fluid rounded-circle">
+                    </div>
+                    <h2>Sofía G.</h2>
+                    <p class="card-text">El mejor hotel en el que me he hospedado. 
+                    Las habitaciones son amplias, modernas y con una vista espectacular al mar. El personal siempre fue amable y atento a cada detalle. Sin duda, volveré en mis próximas vacaciones.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide m5">
+                <div class="card mx-3 text-center active-card">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 75%; height: auto; background-color: #e0e0e0;">
+                      <img src="../Resources/Comments/Carlos.jpg" alt="Avatar" class="img-fluid rounded-circle">
+                    </div>
+                    <h2>Carlos M.</h2>
+                    <p class="card-text">Pasé una semana aquí con mi familia y fue una experiencia increíble. Mis hijos disfrutaron mucho de la piscina y las actividades organizadas.
+                    El restaurante ofrece una variedad deliciosa de platillos locales e internacionales. ¡Recomendado al 100%!</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slide m5">
+                <div class="card mx-3 text-center active-card">
+                  <div class="card-body">
+                    <div class="rounded-circle mx-auto mb-3" style="width: 75%; height: auto; background-color: #e0e0e0;">
+                      <img src="../Resources/Comments/Laura.png" alt="Avatar" class="img-fluid rounded-circle">
+                    </div>
+                    <h2>Laura P.</h2>
+                    <p class="card-text">Un lugar de ensueño. La tranquilidad del hotel, combinado con la naturaleza que lo rodea, hizo de nuestra estancia algo mágico. 
+                    El spa es excelente, perfecto para relajarse después de un día explorando la zona. ¡Volveré pronto!</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
 
 
 
