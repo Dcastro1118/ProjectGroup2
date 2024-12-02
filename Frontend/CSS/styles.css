@@ -484,7 +484,6 @@ h1 , h2{
 #galeria{
     display: flex;
     width: 1500px;
-
 }
 
 #galeria img{
@@ -513,8 +512,6 @@ transition: 1s ease;
 }
 
 
-
-
 /* ------------Seccion mapa---------*/
 .seccion-mapa{
     display: flex;
@@ -534,7 +531,6 @@ transition: 1s ease;
     margin: 50px;
 }
 
-
 /*-----------------------Seccion 404--------------------*/
 
 .seccion404{
@@ -542,9 +538,7 @@ transition: 1s ease;
     display: flex;
     justify-content: center;
     margin: 50px;
-
 }
-
 
 .contenedor404{
     height: 500px;
@@ -553,8 +547,6 @@ transition: 1s ease;
     width: 50%;
     background-color: #0044459b;
     border-radius: 20px;
-
-
 }
 
 .formato_img2{

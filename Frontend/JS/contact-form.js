@@ -1,4 +1,5 @@
 document.getElementById("contact_form").addEventListener("submit", sendJson) 
+
 document.getElementById("ver-mapa").addEventListener("click", verMapa)
 
     function verMapa(){

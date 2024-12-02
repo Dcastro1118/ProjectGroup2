@@ -74,6 +74,7 @@ class UserService
 
             // Crear un nuevo objeto User
             $user = new User();
+            
             $user->setName($name);
             $user->setUsername($username);
             $user->setPassword(password_hash($password, PASSWORD_BCRYPT)); // Cifrado de la contraseña
