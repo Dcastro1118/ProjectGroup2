@@ -41,7 +41,7 @@
                         <h3><i>Estacionamiento</i></h3>
                         <!--cara frontal-->
                         <div class="caraSer frontalSer">
-                            <img class="formato_img2" src="../Resources/Servicios/Estacionamiento.png" alt="estacionamiento">
+                            <img class="formato_img2" src="../Resources/Servicios/Estacionamiento.png" alt="estacionamiento" style="width: 100%; height:100%;">
                         </div>
 
                         <!--cara trasera-->
@@ -60,7 +60,7 @@
                         <!--cara frontal-->
                         <div class="caraSer frontalSer">
                             
-                            <img class="formato_img2" src="../Resources/Servicios/Restaurante.png" alt="restaurante">
+                            <img class="formato_img2" src="../Resources/Servicios/Restaurante.png" alt="restaurante" style="width: 100%; height:100%;">
                         </div>
 
                         <!--cara trasera-->
@@ -79,7 +79,7 @@
                         <h3><i>Piscina</i></h3>
                         <!--cara frontal-->
                         <div class="caraSer frontalSer">
-                            <img class="formato_img2" src="../Resources/Servicios/Piscina.png" alt="piscina">
+                            <img class="formato_img2" src="../Resources/Servicios/Piscina.png" alt="piscina" style="width: 100%; height:100%;">
                         </div>
 
                         <!--cara trasera-->
