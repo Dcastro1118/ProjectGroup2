@@ -232,7 +232,7 @@ nav{
 }
 
 
-/* Seccio comentarios */
+/* Seccion comentarios */
 
 .caja-comentarios{
     margin: 2%;
@@ -253,8 +253,48 @@ border-radius: 10px;
 margin-right: 2%;
 }
 
+/* Sección carrusel reseñas */
 
+.reseñas .carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Oculta las imágenes que se salen de la vista */
+}
 
+.reseñas .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: scale(0.8); /* Reducir tamaño de las imágenes laterales */
+}
+
+.reseñas .carousel-item.active {
+    opacity: 1; /* Resalta la imagen activa */
+    transform: scale(1.1); /* Resalta la tarjeta central */
+}
+
+.reseñas .carousel-item-next, .carousel-item-prev {
+    opacity: 0.7; /* Reduce opacidad de las imágenes laterales */
+    transform: scale(0.8); /* Las imágenes a los lados se ven más pequeñas */
+}
+
+/* Estilos adicionales para las tarjetas */
+.reseñas .carousel-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reseñas .carousel-item.active .carousel-card {
+    transform: scale(1.1); /* Aumentar el tamaño de la tarjeta central */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Agregar sombra para resaltar */
+}
 
 
 
