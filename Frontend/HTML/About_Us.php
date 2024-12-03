@@ -26,6 +26,7 @@
 
                 <!--Etiqueta botones navegación-->
                 <?php
+                $currentPage = 'about';
                 include "./Componentes/menu.html";
                 ?>
 

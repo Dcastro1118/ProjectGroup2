@@ -28,6 +28,7 @@
 
                 <!--Etiqueta botones navegación-->
                 <?php
+                $currentPage = 'index';
                 include "./Componentes/menu.html";
                 ?>
             <!--Divisor-->

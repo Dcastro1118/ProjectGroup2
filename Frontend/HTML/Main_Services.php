@@ -24,6 +24,7 @@
 
                 <!--Etiqueta botones navegación-->
                 <?php
+                $currentPage = 'services';
                 include "./Componentes/menu.html";
                 ?>
 

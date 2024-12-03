@@ -20,6 +20,7 @@
 
                 <!--Etiqueta botones navegación-->
                 <?php
+                $currentPage = 'login';
                 include "./Componentes/menu.html";
                 ?>
 
