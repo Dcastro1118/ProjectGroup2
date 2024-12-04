@@ -71,11 +71,6 @@ nav{
     height: 100%;
     display: flex;
 }
-
-.end-section button{
-    display: none;
-}
-
 .botones_menu{
     height: 100%;
     background: none;
@@ -594,3 +589,26 @@ transition: 1s ease;
     }
 }
 
+/*   Reservar   */
+
+.Reservar{
+    width: 500px;
+    background-color: #0044459b;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.room_container{
+    width: 100%;
+}
+
+.room{
+    width: 400px;
+    border-radius: 15px;
+    background-color: #0044459b;
+}
+
+#userimage{
+    width: 40px; 
+    border-radius: 50%;
+}

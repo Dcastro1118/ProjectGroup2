@@ -29,10 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Crear instancia de AuthController
         $authController = new UserService();
         // Registrar el usuario
-        $response = $authController->loginUsuario($data);
-    
-        // Responder con el resultado
-        echo json_encode(['message' => $response]);
+        $authController->loginUsuario($data);
     }
         
 } else {

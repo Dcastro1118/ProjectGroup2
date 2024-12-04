@@ -1,6 +1,7 @@
 <?php
 
-require_once '../Model/User.php';
+include_once '../../Backend/Model/User.php';
+
 
 
 class SessionService {
@@ -16,7 +17,7 @@ class SessionService {
     // Verifica si el usuario está logueado
     public function isLoggedIn() {
         session_start();
-        return isset($_SESSION['user']);
+        return isset($_SESSION['username']);
     }
 
     // Cierra la sesión
@@ -24,5 +25,11 @@ class SessionService {
         session_start();
         session_unset();
         session_destroy();
+    }
+
+    public function middleware(){
+        if (!$this->isLoggedIn()){
+            header("Location: http://localhost/ProjectGroup2/Frontend/HTML/Login.php");
+        }
     }
 }

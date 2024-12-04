@@ -21,7 +21,7 @@
                 <!--Etiqueta botones navegación-->
                 <?php
                 $currentPage = 'login';
-                include "./Componentes/menu.html";
+                include "./Componentes/menu.php";
                 ?>
 
 
@@ -67,7 +67,6 @@
     include "./Componentes/footer.html";
     ?>
     </div>
-    <script src="../JS/user-session.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../JS/auth-request.js"></script>
 </body>

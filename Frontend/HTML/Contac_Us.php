@@ -26,7 +26,7 @@
                 <!--Etiqueta botones navegación-->
                 <?php
                 $currentPage = 'contact';
-                include "./Componentes/menu.html";
+                include "./Componentes/menu.php";
                 ?>
 
 

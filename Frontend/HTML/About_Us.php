@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -27,7 +29,7 @@
                 <!--Etiqueta botones navegación-->
                 <?php
                 $currentPage = 'about';
-                include "./Componentes/menu.html";
+                include "./Componentes/menu.php";
                 ?>
 
         </header>

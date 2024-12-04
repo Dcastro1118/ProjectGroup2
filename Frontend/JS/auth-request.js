@@ -10,10 +10,6 @@ if (registerForm) {
     registerForm.addEventListener("submit", registerRequest);
 }
 
-// Función para guardar los datos del usuario en localStorage
-function guardarUsuarioEnLocalStorage(userData) {
-    localStorage.setItem('usuario', JSON.stringify(userData));  // Convertimos el objeto a JSON para guardarlo
-}
 
 
 
@@ -40,19 +36,15 @@ function loginRequest(event) {
     })
         .then(response => {
             if (response.ok) {
+                console.log("Bien");
+                window.location.href = "http://localhost/ProjectGroup2/Frontend/HTML/index.php";
                 return response.json(); // Procesa la respuesta en JSON si se necesita
             } else {
                 throw new Error("Error en el envío del formulario");
             }
         })
         .then(data => {
-            console.log("Formulario enviado correctamente:", data);
-            if (data.usuario) {  // Verifica que los datos del usuario existan
-                guardarUsuarioEnLocalStorage(data.usuario);
                 alert("Has iniciado sesión correctamente!");
-            } else {
-                alert("No se pudo obtener la información del usuario.");
-            }
         })
         .catch(error => {
             console.error("Hubo un problema con el envío:", error);

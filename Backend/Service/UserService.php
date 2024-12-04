@@ -45,8 +45,13 @@ class UserService
                 "email" => $user->getEmail()
             /*  "foto" => "https://ejemplo.com/foto.jpg"*/
             ];
+
+            $response = [
+                "Usuario" => $usuario
+            ];
+
             header('Content-Type: application/json', true, 200);
-            echo json_encode(['Usuario' => $usuario]);
+            echo json_encode($response);
             return;
         } else {
             header('Content-Type: application/json', true, 400);

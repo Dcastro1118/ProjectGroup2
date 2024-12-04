@@ -18,29 +18,29 @@
             <!--Contenedor de botones-->
 
 
-                <!--Etiqueta botones navegación-->
-                <?php
-                include "./Componentes/menu.html";
-                ?>
+            <!--Etiqueta botones navegación-->
+            <?php
+            include "./Componentes/menu.php";
+            ?>
 
 
 
         </header>
         <main>
 
-        <section class="seccion404">
-        <div class="contenedor404">
-        <img class="m-5" src="../Resources/404image2.png" alt="">
+            <section class="seccion404">
+                <div class="contenedor404">
+                    <img class="m-5" src="../Resources/404image2.png" alt="">
 
 
-        </div>
-        </section>
+                </div>
+            </section>
         </main>
 
 
         <?php
-    include "./Componentes/footer.html";
-    ?>
+        include "./Componentes/footer.html";
+        ?>
 </body>
 
 </html>

@@ -29,7 +29,7 @@
                 <!--Etiqueta botones navegación-->
                 <?php
                 $currentPage = 'index';
-                include "./Componentes/menu.html";
+                include "./Componentes/menu.php";
                 ?>
             <!--Divisor-->
 

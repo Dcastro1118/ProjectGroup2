@@ -17,81 +17,81 @@
 
             <!--Contenedor de botones-->
 
-                <!--Etiqueta botones navegación-->
-                <?php
-                include "./Componentes/menu.html";
-                ?>
+            <!--Etiqueta botones navegación-->
+            <?php
+            include "./Componentes/menu.php";
+            ?>
 
         </header>
         <main>
-            
+
 
             <div class="register_image d-flex justify-content-evenly">
-            
-            
-            <div id="register_box" class="m-3 d-flex flex-column align-items-center justify-content-center">
-
-                <!--Etiqueta formulario-->
-
-                <h2>Registrate</h2>
-                <p> y empieza a vivir tus vacaciones soñadas!</p>
 
 
-                <form class="d-flex flex-column justify-content-center align-content-center text-center" style="width: 300px;" id="register_form"
-                    method="post">
-                    
-                    <input type="hidden" name="action" value="register">
-                    <label for="name">Nombre</label>
-                    <input class="form-control m-2" type="text" id="name" name="name" required>
-                    <span class="error" id="nameError"></span>
+                <div id="register_box" class="m-3 d-flex flex-column align-items-center justify-content-center">
 
-                    <label for="lastName">Apellidos</label>
-                    <input class="form-control m-2" type="text" id="lastName" name="lastName" required>
-                    <span class="error" id="apellidosError"></span>
+                    <!--Etiqueta formulario-->
 
-                    <label for="identificacion">Identificación:</label>
-                    <input class="form-control m-2" type="text" id="identificacion" name="identificacion" required>
-                    <span class="error" id="identificacionError"></span>
+                    <h2>Registrate</h2>
+                    <p> y empieza a vivir tus vacaciones soñadas!</p>
 
-                    <label for="phone">Telefono</label>
-                    <input class="form-control m-2" type="text" id="phone" name="phone" required>
-                    <span class="error" id="telefonoError"></span>
 
-                    <label for="username">Usuario:</label>
-                    <input class="form-control m-2" type="text" id="username" name="username" required>
-                    <span class="error" id="usuarioError"></span>
+                    <form class="d-flex flex-column justify-content-center align-content-center text-center" style="width: 300px;" id="register_form"
+                        method="post">
 
-                    <label for="password">Contraseña:</label>
-                    <input class="form-control m-2" type="password" id="password" name="password" required>
-                    <span class="error" id="contraseñaError"></span>
+                        <input type="hidden" name="action" value="register">
+                        <label for="name">Nombre</label>
+                        <input class="form-control m-2" type="text" id="name" name="name" required>
+                        <span class="error" id="nameError"></span>
 
-                    <label for="email">Correo Electrónico:</label>
-                    <input class="form-control m-2" type="email" id="email" name="email" required>
-                    <span class="error" id="correoError"></span>
+                        <label for="lastName">Apellidos</label>
+                        <input class="form-control m-2" type="text" id="lastName" name="lastName" required>
+                        <span class="error" id="apellidosError"></span>
 
-                    <label class="m-2" for="gender">Genero:</label>
-                    <select class="m-2" id="gender" name="gender">
-                        <option value="Masculino">Masculino</option>
-                        <option value="Femenino">Femenino</option>
-                        <option value="Femenino">Prefiero no especificar</option>
-                    </select>
+                        <label for="identificacion">Identificación:</label>
+                        <input class="form-control m-2" type="text" id="identificacion" name="identificacion" required>
+                        <span class="error" id="identificacionError"></span>
 
-                    <br> <br>
+                        <label for="phone">Telefono</label>
+                        <input class="form-control m-2" type="text" id="phone" name="phone" required>
+                        <span class="error" id="telefonoError"></span>
 
-                    <button class="btn btn-dark m-2" type="submit">¡Registrarse!</button>
-                    <button class="btn btn-dark m-2" type="reset">Limpiar</button>
+                        <label for="username">Usuario:</label>
+                        <input class="form-control m-2" type="text" id="username" name="username" required>
+                        <span class="error" id="usuarioError"></span>
 
-                </form>
+                        <label for="password">Contraseña:</label>
+                        <input class="form-control m-2" type="password" id="password" name="password" required>
+                        <span class="error" id="contraseñaError"></span>
 
+                        <label for="email">Correo Electrónico:</label>
+                        <input class="form-control m-2" type="email" id="email" name="email" required>
+                        <span class="error" id="correoError"></span>
+
+                        <label class="m-2" for="gender">Genero:</label>
+                        <select class="m-2" id="gender" name="gender">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Femenino">Prefiero no especificar</option>
+                        </select>
+
+                        <br> <br>
+
+                        <button class="btn btn-dark m-2" type="submit">¡Registrarse!</button>
+                        <button class="btn btn-dark m-2" type="reset">Limpiar</button>
+
+                    </form>
+
+                </div>
             </div>
-        </div>
 
         </main>
 
-            <!-- Footer -->
+        <!-- Footer -->
         <?php
-    include "./Componentes/footer.html";
-    ?>
+        include "./Componentes/footer.html";
+        ?>
         <!-- Finaliza Footer -->
 
     </div>

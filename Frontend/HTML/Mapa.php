@@ -20,7 +20,7 @@
 
                 <!--Etiqueta botones navegación-->
                 <?php
-                include "./Componentes/menu.html";
+                include "./Componentes/menu.php";
                 ?>
 
 

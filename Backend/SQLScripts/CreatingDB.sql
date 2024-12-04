@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS `reservations` (
 CREATE TABLE IF NOT EXISTS `rooms` (
     `room_id` INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `reservation_id` INT UNSIGNED NOT NULL,
+    `type` VARCHAR NOT NULL,
     `capacity` INT NOT NULL,
     `price` INT NOT NULL,
     `floor` INT NOT NULL,
