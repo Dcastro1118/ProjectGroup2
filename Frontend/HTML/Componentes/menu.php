@@ -25,11 +25,18 @@ include "../../Backend/Service/SessionService.php"
 			<?php
 			$session = new SessionService();
 			if ($session->isLoggedIn()){
-				echo '<div class="logout-section">
-				<img src="../Resources/Comments/Carlos.jpg" alt="" id="userimage">
-				<button class="botones_menu" id="Button_Logout">
-					<a class="link_botones" href="Login.php">Salir</a>
+				echo '<div class="logout-section d-flex">
+				<button class="botones_menu" id="Button_menu">
+					<img src="../Resources/Comments/Carlos.jpg" alt="" id="userimage">
 				</button>
+			</div>
+			<div id="esconder-menu">
+				<nav class="menu-desplegable">
+        			<a class="botones">Ver reservaciones</a>
+        			<a class="botones">Reservar</a>
+        			<a class="botones">Editar reservaciones</a>
+        			<a class="botones">Cerrar Sesion</a>
+    			</nav>
 			</div>';
 			} else {
 				echo '<div class="login-section">
@@ -39,12 +46,9 @@ include "../../Backend/Service/SessionService.php"
 			</div>';
 			}
 
-
-
-
 			?>
 
-
+			<script src="../JS/menu-desplegable.js"></script>
 
 
 			
