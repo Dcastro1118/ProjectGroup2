@@ -1,5 +1,6 @@
 var loginForm = document.getElementById("login_form");
 var registerForm = document.getElementById("register_form");
+var logout_button = document.getElementById("logout_button")
 
 
 if (loginForm) {
@@ -8,6 +9,10 @@ if (loginForm) {
 
 if (registerForm) {
     registerForm.addEventListener("submit", registerRequest);
+}
+
+if (logout_button) {
+    logout_button.addEventListener("click", cerrarSesion);
 }
 
 
@@ -87,4 +92,19 @@ function registerRequest(event) {
             console.error("Hubo un problema con el envío:", error);
             alert("Tu soliditud ha fracasado, hubo un problema.");
 });
+}
+function cerrarSesion(event){
+    event.preventDefault();
+    const bodyData = {
+        action: "logout"
+    };
+    fetch("http://localhost/ProjectGroup2/Backend/Controllers/AuthController.php", { // URL del controlador
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(bodyData)
+    })
+    alert("La sesion ha sido cerrada con exito!");
+    window.location.href = "http://localhost/ProjectGroup2/Frontend/HTML/Login.php";
 }

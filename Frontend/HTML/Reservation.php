@@ -28,56 +28,19 @@ $sessionService->middleware(); */
 
         </header>
         <main>
-
-            <section class="d-flex flex-column align-items-center justify-content-center m-5">
-                <h1>Habitaciones</h1>
-                <div class=".room_container d-flex">
-
-                    <div class="card m-5" style="width: 18rem;">
-                        <img src="../Resources/Servicios/Habitaciones/Suite.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Suite</h5>
-                            <p class="card-text">La Suite es una amplia habitacion doble con baño incluido y una hermosa vista al bosque.</p>
-                            <a href="#" class="btn btn-dark">Ver detalles</a>
-                        </div>
-                    </div>
-
-                    <div class="card m-5" style="width: 18rem;">
-                        <img src="../Resources/Servicios/Habitaciones/SuiteJunior.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Junior Suite</h5>
-                            <p class="card-text">La Suite Junior es una pequeña habitacion doble con baño incluido y
-                                una hermosa vista al bosque </p>
-                            <a href="#" class="btn btn-dark">Ver detalles</a>
-                        </div>
-                    </div>
-
-                    <div class="card m-5" style="width: 18rem;">
-                        <img src="../Resources/Servicios/Habitaciones/Honeymoon.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Honeymoon</h5>
-                            <p class="card-text">La habitacion Honeymoon es una hermosa habitacion adornada que convertira tu luna de miel
-                                en un momento inolvidable
-                            </p>
-                            <a href="#" class="btn btn-dark">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
-
-
+        <section class="d-flex align-items-center justify-content-center m-5">
                 <div class="Reservar">
                     <div class="text-center">
                         <h1 class="mb-4">Reservacion en linea</h1>
                     </div>
                     <form>
                         <div class="mb-3">
-                            <label for="hotel" class="form-label">Elija hotel</label>
+                            <label for="hotel" class="form-label">Elija el tipo de habitacion</label>
                             <select class="form-select" id="hotel">
                                 <option selected disabled> Elija una Habitacion</option>
-                                <option value="hotel1">Estandar</option>
-                                <option value="hotel2">Premium</option>
+                                <option value="hotel1">Suite</option>
+                                <option value="hotel2">Junior Suite</option>
                                 <option value="hotel3">Honeymoon</option>
-                                <option value="hotel4">Glamping</option>
                             </select>
                         </div>
                         <div class="row">
@@ -91,11 +54,47 @@ $sessionService->middleware(); */
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="button" class="btn btn-primary" onclick="checkAvailability()">CONSULTAR DISPONIBILIDAD</button>
+                            <button type="button" class="btn btn-dark" onclick="checkAvailability()">CONSULTAR DISPONIBILIDAD</button>
                         </div>
                     </form>
 
                 </div>
+                
+
+                <div class=".room_container d-flex">
+
+                    <div class="card m-3" style="width: 18rem; background-color: #004445c7; color: #c6c5c1;">
+                        <img src="../Resources/Servicios/Habitaciones/Suite.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Suite</h5>
+                            <p class="card-text">La Suite es una amplia habitacion doble con baño incluido y una hermosa vista al bosque.</p>
+                            <a href="#" class="btn btn-dark">Ver detalles</a>
+                        </div>
+                    </div>
+
+                    <div class="card m-3" style="width: 18rem; background-color: #004445c7; color: #c6c5c1;">
+                        <img src="../Resources/Servicios/Habitaciones/SuiteJunior.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Junior Suite</h5>
+                            <p class="card-text">La Suite Junior es una pequeña habitacion doble con baño incluido y
+                                una hermosa vista al bosque </p>
+                            <a href="#" class="btn btn-dark">Ver detalles</a>
+                        </div>
+                    </div>
+
+                    <div class="card m-3" style="width: 18rem; background-color: #004445c7; color: #c6c5c1;">
+                        <img src="../Resources/Servicios/Habitaciones/Honeymoon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Honeymoon</h5>
+                            <p class="card-text">La habitacion Honeymoon es una hermosa habitacion adornada que convertira tu luna de miel
+                                en un momento inolvidable
+                            </p>
+                            <a href="#" class="btn btn-dark">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+
 
             </section>
 

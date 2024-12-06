@@ -51,25 +51,44 @@ nav{
     margin: 0px 20px 0px 15px;
     display: flex;
     justify-content: space-between;
+
 }
 
 .logo-section{
-    width: 100px; /* Ancho del recorte */
+    width: 30%; /* Ancho del recorte */
     height: 100px; /* Altura del recorte */
     overflow: hidden; /* Oculta el contenido que exceda los límites */
-    position: relative;
+
+}
+
+.login-section{
+    display: flex;
+    height: 100%;
+    justify-content: end;
+
 }
 
 .logo-section img{
-    width: 100%; /* Ajusta según necesites */
-    height: auto;
-    position: absolute; /* Permite mover la imagen */
-    top: -25px; /* Ajusta para centrar */
+    width: 110px; /* Ajusta según necesites */
+    height: 40px;
+    margin-top: 5px;
+}
+
+.logout-section{
+    display: flex;
+    justify-content: end;
+    padding-top: 5px;
 }
 
 .end-section{
     height: 100%;
+    width: 30%;
     display: flex;
+    flex-direction: column;
+}
+
+.middle-section{
+    width: 30%;
 }
 .botones_menu{
     height: 100%;
@@ -96,7 +115,7 @@ nav{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #004445;
+    background-color: #004445c7;
     border-radius: 15px;
     margin: 0;
 
@@ -107,6 +126,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #c6c5c1;
+    text-decoration: none;
 }
 .botones:hover{
     background-color: #021c1e6a;
@@ -114,6 +135,8 @@ nav{
 }
 #esconder-menu{
     display: none;
+
+    justify-content: end;
     z-index: 9999; /* Asegura que el menú esté encima de otros elementos */
 }
 
@@ -620,6 +643,7 @@ transition: 1s ease;
 .Reservar{
     width: 500px;
     background-color: #0044459b;
+    color: #c6c5c1;
     padding: 35px;
     border-radius: 15px;
 }

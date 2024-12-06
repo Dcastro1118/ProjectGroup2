@@ -9,13 +9,13 @@ require_once 'SessionService.php';
 class UserService
 {
     private $entityManager;
-    private $SessionService;
+    private $sessionService;
 
     public function __construct()
     {
         // Obtener la conexión desde dbConection (requiere un EntityManager de Doctrine)
         $this->entityManager = Bootstrap::getEntityManager();
-        $this->SessionService = new SessionService();
+        $this->sessionService = new SessionService();
 
     }
 
@@ -38,7 +38,7 @@ class UserService
             }
             // Si el login es exitoso, devolver respuesta
 
-            $this->SessionService->iniciarSesion($user);
+            $this->sessionService->iniciarSesion($user);
             $usuario = [
                 "id" => $user->getId(),
                 "nombre" => $user->getName() . " " . $user->getLastName(),
@@ -59,6 +59,10 @@ class UserService
             return;
         }
         
+    }
+
+    public function logoutUsuario(){
+        $this->sessionService->cerrarSesion();
     }
 
 

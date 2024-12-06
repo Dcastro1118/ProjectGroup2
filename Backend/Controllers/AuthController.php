@@ -30,6 +30,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $authController = new UserService();
         // Registrar el usuario
         $authController->loginUsuario($data);
+    } elseif ($data['action'] == 'logout'){
+        $authController = new UserService();
+        // Registrar el usuario
+        $authController->logoutUsuario();
     }
         
 } else {
