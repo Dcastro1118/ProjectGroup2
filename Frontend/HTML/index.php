@@ -85,7 +85,6 @@
                         acondicionado, baño privado
                         vista a la montaña, nevera privada, jacuzzi y columpios
                     </h6>
-                    
                 </div>
             </div>
 
@@ -195,7 +194,8 @@
                     </div>
                     <h2>Sofía G.</h2>
                     <p class="card-text">El mejor hotel en el que me he hospedado. 
-                    Las habitaciones son amplias, modernas y con una vista espectacular al mar. El personal siempre fue amable y atento a cada detalle. Sin duda, volveré en mis próximas vacaciones.</p>
+                    Las habitaciones son amplias, modernas y con una vista espectacular al mar. El personal 
+                    siempre fue amable y atento a cada detalle. Sin duda, volveré en mis próximas vacaciones.</p>
                   </div>
                 </div>
             </div>
