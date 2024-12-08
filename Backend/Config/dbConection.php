@@ -6,7 +6,7 @@ class dbConection{
     private $host = "localhost"; // Dirección del servidor
     private $db_name = "hotel_bitsu_db"; // Nombre de la base de datos
     private $username = "root"; // Usuario de la base de datos
-    private $password = "Julian123950722!"; // Contraseña de la base de datos
+    private $password = "Luna24+"; // Contraseña de la base de datos
     private $conn; // Variable para almacenar la conexión
 
     // Método para obtener la conexión

@@ -52,6 +52,7 @@ function loginRequest(event) {
                 alert("Has iniciado sesión correctamente!");
         })
         .catch(error => {
+            console.log(error);
             console.error("Hubo un problema con el envío:", error);
             alert("Error, contraseña o usuario incorrecto!");
         });
