@@ -662,3 +662,61 @@ transition: 1s ease;
     width: 40px; 
     border-radius: 50%;
 }
+
+
+
+/* ------------------ Admin Panel--------------------------  */
+
+
+
+.panel-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.admin-panel{
+    border-radius: 15px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    background-color: #0044459b;
+}
+
+.admin-panel a{
+    margin: 15px;
+}
+
+.user-crud-panel{
+    margin: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.users-table{
+    margin: 25px;
+    width: 1200px;
+}
+
+#user-form{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #c6c5c1;
+}
+
+#user-crud-form{
+    margin-bottom: 25px;
+    color: #c6c5c1;
+}
+
+.result{
+    display: none;
+}

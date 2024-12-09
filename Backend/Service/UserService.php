@@ -1,10 +1,10 @@
 <?php
 
 // Incluir la clase de conexión y las dependencias necesarias
-require_once '../Config/dbConection.php';
-require_once '../Model/User.php';
-require_once '../Config/Bootstrap.php';
-require_once 'SessionService.php';
+require_once '../../Backend/Config/dbConection.php';
+require_once '../../Backend/Model/User.php';
+require_once '../../Backend/Config/Bootstrap.php';
+require_once '../../Backend/Service/SessionService.php';
 
 class UserService
 {
@@ -65,8 +65,6 @@ class UserService
         $this->sessionService->cerrarSesion();
     }
 
-
-
     public function registrarUsuario($data)
     {
         // Verificar que todos los campos necesarios estén presentes
@@ -112,5 +110,18 @@ class UserService
             echo json_encode(['error' => 'Todos los campos son requeridos']);
             exit;
         }
+    }
+
+
+    function getAllUsers() {
+        $userRepository = $this->entityManager->getRepository(User::class);
+        $users = $userRepository->findAll();
+        return $users; 
+    }
+    
+    function getUserByIdentification($data) {
+        $userRepository = $this->entityManager->getRepository(User::class);
+        $users = $userRepository->findOneBy(['identificacion' => $data['identificacion']]);
+        return $users; 
     }
 }

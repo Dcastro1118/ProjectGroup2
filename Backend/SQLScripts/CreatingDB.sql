@@ -15,7 +15,8 @@ CREATE TABLE IF NOT EXISTS `users` (
     `email` VARCHAR(40) NOT NULL,
     `password` VARCHAR(80) NOT NULL,
     `identificacion` VARCHAR(30) NOT NULL UNIQUE,
-    `gender` VARCHAR(12) NOT NULL
+    `gender` VARCHAR(12) NOT NULL,
+    `isAdmin` TINYINT(1) NOT NULL
 );
 CREATE TABLE IF NOT EXISTS `reservations` (
     `reservation_id` INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -31,6 +32,7 @@ CREATE TABLE IF NOT EXISTS `rooms` (
     `capacity` INT NOT NULL,
     `price` INT NOT NULL,
     `floor` INT NOT NULL,
+    `mayordomo` VARCHAR() NOT NULL,
     FOREIGN KEY (`reservation_id`) REFERENCES `reservations`(`reservation_id`)
 
 );
