@@ -33,7 +33,7 @@ $sessionService->middleware(); */
                     <div class="text-center">
                         <h1 class="mb-4">Reservacion en linea</h1>
                     </div>
-                    <form>
+                    <form id="reservation-form">
                         <div class="mb-3">
                             <label for="hotel" class="form-label">Elija el tipo de habitacion</label>
                             <select class="form-select" id="hotel">
@@ -54,7 +54,7 @@ $sessionService->middleware(); */
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="button" class="btn btn-dark" onclick="checkAvailability()">CONSULTAR DISPONIBILIDAD</button>
+                            <button type="submit" class="btn btn-dark" onclick="checkAvailability()">CONSULTAR DISPONIBILIDAD</button>
                         </div>
                     </form>
 
@@ -93,10 +93,24 @@ $sessionService->middleware(); */
                         </div>
                     </div>
                 </div>
+            </section>
 
+
+            <section>
+
+                <div class="resultados">
+                    <?php
+
+                        
+
+
+                    ?>
+                </div>
 
 
             </section>
+
+
 
 
         </main>
@@ -107,6 +121,7 @@ $sessionService->middleware(); */
     <script src="../JS/user-session.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../JS/auth-request.js"></script>
+    <script src="../JS/reservation.js"></script>
 </body>
 
 </html>

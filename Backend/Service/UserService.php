@@ -1,10 +1,10 @@
 <?php
 
 // Incluir la clase de conexión y las dependencias necesarias
-require_once '../Config/dbConection.php';
-require_once '../Model/User.php';
-require_once '../Config/Bootstrap.php';
-require_once 'SessionService.php';
+require_once '../../Backend/Config/dbConection.php';
+require_once '../../Backend/Model/User.php';
+require_once '../../Backend/Config/Bootstrap.php';
+require_once '../../Backend/Service/SessionService.php';
 
 class UserService
 {
@@ -16,10 +16,10 @@ class UserService
         // Obtener la conexión desde dbConection (requiere un EntityManager de Doctrine)
         $this->entityManager = Bootstrap::getEntityManager();
         $this->sessionService = new SessionService();
-
     }
 
-    public function loginUsuario($data) {
+    public function loginUsuario($data)
+    {
         if (isset($data['identificacion'], $data['password'])) {
             $user = $this->entityManager->getRepository(User::class)->findOneBy(['identificacion' => $data['identificacion']]);
 
@@ -43,7 +43,7 @@ class UserService
                 "id" => $user->getId(),
                 "nombre" => $user->getName() . " " . $user->getLastName(),
                 "email" => $user->getEmail()
-            /*  "foto" => "https://ejemplo.com/foto.jpg"*/
+                /*  "foto" => "https://ejemplo.com/foto.jpg"*/
             ];
 
             $response = [
@@ -58,14 +58,12 @@ class UserService
             echo json_encode(['error' => 'Datos incompletos']);
             return;
         }
-        
     }
 
-    public function logoutUsuario(){
+    public function logoutUsuario()
+    {
         $this->sessionService->cerrarSesion();
     }
-
-
 
     public function registrarUsuario($data)
     {
@@ -83,7 +81,7 @@ class UserService
 
             // Crear un nuevo objeto User
             $user = new User();
-            
+
             $user->setName($name);
             $user->setUsername($username);
             $user->setPassword(password_hash($password, PASSWORD_BCRYPT)); // Cifrado de la contraseña
@@ -92,7 +90,6 @@ class UserService
             $user->setPhone($phone);
             $user->setEmail($email);
             $user->setGender($gender);
-
 
             try {
                 // Persistir la entidad en la base de datos
@@ -112,5 +109,84 @@ class UserService
             echo json_encode(['error' => 'Todos los campos son requeridos']);
             exit;
         }
+    }
+
+    function getAllUsers()
+    {
+        $userRepository = $this->entityManager->getRepository(User::class);
+        $users = $userRepository->findAll();
+        return $users;
+    }
+
+    function getUserByIdentification($data)
+    {
+        $userRepository = $this->entityManager->getRepository(User::class);
+        $users = $userRepository->findOneBy(['identificacion' => $data['identification']]);
+        return $users;
+    }
+
+    public function deleteUser($userId)
+    {
+        try {
+            // Buscar el usuario por su ID
+            $user = $this->entityManager->find(User::class, $userId);
+
+            // Si no se encuentra el usuario, lanzar una excepción
+            if (!$user) {
+                header('Content-Type: application/json', true, 404);
+                echo json_encode(['error' => 'Usuario no encontrado']);
+                return;
+            }
+
+            // Eliminar el usuario
+            $this->entityManager->remove($user);
+            $this->entityManager->flush();
+
+            // Responder con éxito
+            header('Content-Type: application/json', true, 200);
+            echo json_encode(['success' => 'Usuario eliminado correctamente']);
+            return true;
+        } catch (\Exception $e) {
+            // Manejar errores y responder
+            header('Content-Type: application/json', true, 500);
+            echo json_encode(['error' => 'Error al intentar eliminar el usuario']);
+            return false;
+        }
+    }
+
+
+    function updateUsers($data)
+    {
+
+        $user = $this->entityManager->find(User::class, $data['user_id']);
+        if (!$user) {
+            throw new Exception('Usuario no encontrado');
+        }
+        // Actualizamos los campos del usuario con los datos proporcionados
+        if (isset($data['nombre'])) {
+            $user->setName($data['nombre']);
+        }
+        if (isset($data['user-name'])) {
+            $user->setUsername($data['user-name']);
+        }
+        if (isset($data['password'])) {
+            $user->setPassword($data['password']);
+        }
+        if (isset($data['apellido'])) {
+            $user->setLastName($data['apellido']);
+        }
+        if (isset($data['telefono'])) {
+            $user->setPhone($data['telefono']);
+        }
+        if (isset($data['e-mail'])) {
+            $user->setEmail($data['e-mail']);
+        }
+        if (isset($data['genero'])) {
+            $user->setGender($data['genero']);
+        }
+        // Guardamos los cambios en la base de datos
+        $this->entityManager->flush();
+
+        return $user;
     }
 }

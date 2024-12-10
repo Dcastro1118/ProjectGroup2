@@ -6,6 +6,9 @@ require_once '../Config/Bootstrap.php';
 require_once '../Model/User.php';
 require_once '../Service/UserService.php';
 
+
+$authService = new UserService();
+
 // Verificar si la solicitud es POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Obtener los datos de la solicitud (pueden ser JSON o datos de formulario)
@@ -16,24 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
     if ($data['action'] == 'register') {
-        // Crear instancia de AuthController
-        $authController = new UserService();
-
-        // Registrar el usuario
-        $response = $authController->registrarUsuario($data);
-
+        // Registrar 
+        $response = $authService->registrarUsuario($data);
         // Responder con el resultado
         echo json_encode(['message' => $response]);
-
     } elseif ($data['action'] == 'login') {
-        // Crear instancia de AuthController
-        $authController = new UserService();
-        // Registrar el usuario
-        $authController->loginUsuario($data);
+        // Login
+        $authService->loginUsuario($data);
     } elseif ($data['action'] == 'logout'){
-        $authController = new UserService();
-        // Registrar el usuario
-        $authController->logoutUsuario();
+        // Logout 
+        $authService->logoutUsuario();
     }
         
 } else {

@@ -28,8 +28,10 @@ class User{
     private string $email;
     #[Column(nullable: false)]
     private string $gender;
+  /*  #[Column(nullable: false)]
+    private bool $isAdmin;
 
-
+*/
     public function getId() {
         return $this->user_id;
     }
@@ -99,4 +101,15 @@ class User{
     }
 
 
+    
+
+/*
+    public function isAdmin(){
+        return $this->isAdmin;
+    }
+
+    function setAdmin($bool){
+        $this->isAdmin = $bool;
+    }
+*/
 }
