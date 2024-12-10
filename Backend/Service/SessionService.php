@@ -32,4 +32,11 @@ class SessionService {
             header("Location: http://localhost/ProjectGroup2/Frontend/HTML/Login.php");
         }
     }
+
+    public function loginMiddleware(){
+        if ($this->isLoggedIn()){
+            header("Location: http://localhost/ProjectGroup2/Frontend/HTML/Login.php");
+        }
+    }
+
 }

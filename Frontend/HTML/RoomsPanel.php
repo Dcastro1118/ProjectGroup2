@@ -38,9 +38,9 @@
         <main>
 
 
-            <div class="user-crud-panel">
+            <div class="room-crud-panel">
 
-                <div class="botones-user-crud">
+                <div class="botones-room-crud">
 
                     <form id="room-crud-form">
                         <label for="identificacion">Buscar por identificacion</label>
@@ -75,49 +75,59 @@
                         <button class="btn btn-dark mt-3">Guardar Cambios</button>
                         <button class="btn btn-dark mt-3">Borrar usuario</button>
 
-                        
                     </div>
 
+                    <button id="button-create-room" class="btn btn-dark m-5">Crear Habitacion</button>
+                    <div id="roomform" class="roomform">
+
+                        <form id="create-room-form">
+                            <input type="hidden" name="action" value="createRoom">
+                            <label class="mb-3" for="tipoHabitacion">Tipo:</label>
+                            <select id="tipoHabitacion" name="tipoHabitacion">
+                                <option value="Suite">Suite</option>
+                                <option value="JuniorSuite">Junior Suite</option>
+                                <option value="Honeymoon">Honeymoon</option>
+                            </select>
+                            <label class="mb-3" for="capacity">Capacidad:</label>
+                            <input type="text" id="capacity" name="capacity">
+
+                            <label class="mb-3" for="floor">Piso:</label>
+                            <input type="text" id="floor" name="floor">
+
+                            <label class="mb-3" for="price">Precio:</label>
+                            <input type="text" id="price" name="price">
+
+                            <label class="mb-3" for="room-number">Numero de habitacion</label>
+                            <input type="text" id="room-number" name="room-number">
+
+                            <label class="mb-3" for="mayordomo">Mayordomo</label>
+                            <input type="text" id="mayordomo" name="mayordomo">
+
+
+
+                            <button type="submit" class="btn btn-dark mt-3">Crear</button>
+
+
+                        </form>
+                    </div>
                 </div>
 
-                <div class="users-table">
-                    <?php
+                <div class="rooms-table">
+                    <table class='table table-bordered table-string'>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tipo</th>
+                                <th>Capacidad</th>
+                                <th>Piso</th>
+                                <th>Precio</th>
+                                <th>Numero de Habitacion</th>"
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                    echo "<table class='table table-bordered table-striped'>";
-                    echo "<thead>";
-                    echo "<tr>";
-                    echo "<th>ID</th>";
-                    echo "<th>Tipo</th>";
-                    echo "<th>Capacidad</th>";
-                    echo "<th>Piso</th>";
-                    echo "<th>Precio</th>";
-                    echo "<th>Numero de Habitacion</th>";
-                    echo "</tr>";
-                    echo "</thead>";
-/*
-                    foreach ($users as $user) {
-                        echo "<tbody>";
-                        echo "<tr>";
-                        echo "<td>" . $user->getId() . "</td>";
-                        echo "<td>" . $user->getName() . "</td>";
-                        echo "<td>" . $user->getLastName() . "</td>";
-                        echo "<td>" . $user->getUsername() . "</td>";
-                        echo "<td>" . $user->getPhone() . "</td>";
-                        echo "<td>" . $user->getEmail() . "</td>";
-                        echo "<td>" . $user->getIdentification() . "</td>";
-                        echo "<td>" . $user->getGender() . "</td>";
-
-                        echo "</tr>";
-
-                        echo "</tbody>";
-                    }
-
-
-                    echo "</table>";
-*/
-
-
-                    ?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
@@ -129,10 +139,12 @@
         include "./Componentes/footer.html";
         ?>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../JS/auth-request.js"></script>
     <script src="../JS/room-panel.js"></script>
 
-</body>
 
-</html>
+
+
+</body>

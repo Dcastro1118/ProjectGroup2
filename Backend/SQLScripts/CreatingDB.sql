@@ -28,11 +28,12 @@ CREATE TABLE IF NOT EXISTS `reservations` (
 CREATE TABLE IF NOT EXISTS `rooms` (
     `room_id` INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `reservation_id` INT UNSIGNED NOT NULL,
-    `type` VARCHAR NOT NULL,
+    `room_type` VARCHAR(30) NOT NULL,
     `capacity` INT NOT NULL,
     `price` INT NOT NULL,
     `floor` INT NOT NULL,
-    `mayordomo` VARCHAR() NOT NULL,
+    `room_number` INT NOT NULL,
+    `mayordomo` VARCHAR(40) NOT NULL,
     FOREIGN KEY (`reservation_id`) REFERENCES `reservations`(`reservation_id`)
 
 );

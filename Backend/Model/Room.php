@@ -11,9 +11,9 @@ use Doctrine\ORM\Mapping\Table;
 #[Table('rooms')]
 class Room{
     #[Id]
-    #[Column, GeneratedValue]
+    #[Column(name:"room_id"), GeneratedValue]
     private int $roomId;
-    #[Column(nullable: false)]
+    #[Column(name:"reservation_id")]
     private int $reservationId;
     #[Column(nullable: false)]
     private int $capacity;
@@ -21,8 +21,12 @@ class Room{
     private int $price;
     #[Column(nullable: false)]
     private int $floor;
-    #[Column(nullable: false)]
+    #[Column(name:"room_type", nullable: false)]
     private string $roomType;
+    #[Column(name:"room_number", nullable: false)]
+    private int $roomNumber;
+    #[Column(nullable: false)]
+    private string $mayordomo;
 
     public function getRoomId(){
         return $this->roomId;   
@@ -61,6 +65,20 @@ class Room{
 
     public function setRoomType($roomType){
         $this->roomType = $roomType;
+    }
+    public function getRoomNumber(){
+        return $this->roomNumber;
+    }
+
+    public function setRoomNumber($roomNumber){
+        $this->roomNumber = $roomNumber;
+    }
+    public function getMayordomo(){
+        return $this->mayordomo;
+    }
+
+    public function setMayordomo($mayordomo){
+        $this->mayordomo = $mayordomo;
     }
 
 

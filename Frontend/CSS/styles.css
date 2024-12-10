@@ -720,3 +720,40 @@ transition: 1s ease;
 .result{
     display: none;
 }
+
+#user-create-form{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #c6c5c1;
+}
+
+.createUser{
+    display: none;
+}
+
+
+/*---------------------Room Panel------------------------*/
+
+.botones-room-crud{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #c6c5c1;
+}
+.room-crud-panel{
+    margin: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#create-room-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.roomform{
+    display: none;
+}

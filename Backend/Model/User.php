@@ -99,6 +99,10 @@ class User{
     public function setGender($gender) {
         $this->gender = $gender;
     }
+
+
+    
+
 /*
     public function isAdmin(){
         return $this->isAdmin;

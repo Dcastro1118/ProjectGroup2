@@ -49,14 +49,14 @@ function loginRequest(event) {
             }
         })
         .then(data => {
-                alert("Has iniciado sesión correctamente!");
+            alert("Has iniciado sesión correctamente!");
         })
         .catch(error => {
             console.log(error);
             console.error("Hubo un problema con el envío:", error);
             alert("Error, contraseña o usuario incorrecto!");
         });
-    }
+}
 
 function registerRequest(event) {
     event.preventDefault();
@@ -77,8 +77,7 @@ function registerRequest(event) {
         body: JSON.stringify(formObject)
     })
         .then(response => {
-        /*  response.text().then(text => console.log("Respuesta cruda del servidor:", text));
-        */  if (response.ok) {
+            if (response.ok) {
                 return response.json(); // Procesa la respuesta en JSON si se necesita
             } else {
                 throw new Error("Error en el envío del formulario");
@@ -92,9 +91,9 @@ function registerRequest(event) {
         .catch(error => {
             console.error("Hubo un problema con el envío:", error);
             alert("Tu soliditud ha fracasado, hubo un problema.");
-});
+        });
 }
-function cerrarSesion(event){
+function cerrarSesion(event) {
     event.preventDefault();
     const bodyData = {
         action: "logout"
